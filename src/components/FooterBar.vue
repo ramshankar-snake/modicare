@@ -41,22 +41,22 @@
               <div class="footer-section">
                   <div class="footer-section-title">Corporate Information</div>
                   <ul class="footer-section-links-list">
-                      <li><a class="footer-section-link" href="http://www.modi.com/">Modi Enterprise</a></li>
-                      <li><a class="footer-section-link" href="./careers.html">Career</a></li>
-                      <li><a class="footer-section-link" href="./contact-us.html">Contact Us</a></li>
+                      <li><router-link class="footer-section-link" to="http://www.modi.com/">Modi Enterprise</router-link></li>
+                      <li><router-link class="footer-section-link" to="/Career">Career</router-link></li>
+                      <li><router-link class="footer-section-link" to="/contact-us">Contact Us</router-link></li>
                   </ul>
               </div>
               <div class="footer-section">
                   <div>
-                      <a class="footer-section-title d-inline-block" href="./disclaimer.html">Disclaimer</a>
+                      <router-link class="footer-section-title d-inline-block" to="/disclaimer">Disclaimer</router-link>
                   </div>
                   <div>
-                      <a class="footer-section-title d-inline-block" href="./privacy-policy.html">Privacy Policy</a>
+                      <router-link class="footer-section-title d-inline-block" to="/privacy-policy">Privacy Policy</router-link>
                   </div>
                   <div>
-                      <a class="footer-section-title d-inline-block" href="./terms-and-conditions.html">Terms & Conditions</a>
+                      <router-link class="footer-section-title d-inline-block" to="/terms-and-conditions">Terms & Conditions</router-link>
                   </div>
-                  <div><a class="footer-section-title d-inline-block" href="./policy-compliance.html">Policies & Compliances</a></div>
+                  <div><router-link class="footer-section-title d-inline-block" to="/policy-compliance">Policies & Compliances</router-link></div>
               </div>
           </div>
           <div class="col-3">
@@ -175,9 +175,9 @@
                   <div id="footer-mobile-links-section-5" class="collapse">
                       <div class="card-body">
                           <ul class="footer-mobile-links-list">
-                              <li class="footer-mobile-links-list-item"><a href="http://www.modi.com/" class="footer-mobile-link">Modi Enterprise</a></li>
-                              <li class="footer-mobile-links-list-item"><a href="./careers.html" class="footer-mobile-link">Career</a></li>
-                              <li class="footer-mobile-links-list-item"><a href="./contact-us.html" class="footer-mobile-link">Contact Us</a></li>
+                              <li class="footer-mobile-links-list-item"><router-link to="http://www.modi.com/" class="footer-mobile-link">Modi Enterprise</router-link></li>
+                              <li class="footer-mobile-links-list-item"><router-link to="/Career" class="footer-mobile-link">Career</router-link></li>
+                              <li class="footer-mobile-links-list-item"><router-link to="/contact-us" class="footer-mobile-link">Contact Us</router-link></li>
                           </ul>
                       </div>
                   </div>
@@ -229,7 +229,7 @@
           <div class="footer-mobile-additional-links">
               <div><a class="footer-mobile-additional-link" href="./disclaimer.html">Disclaimer</a></div>
               <div><a class="footer-mobile-additional-link" href="./privacy-policy.html">Privacy Policy</a></div>
-              <div><a class="footer-mobile-additional-link" href="./terms-and-conditions.html">Terms & Conditions</a></div>
+              <div><router-link class="footer-mobile-additional-link" to="/terms-and-conditions">Terms & Conditions</router-link></div>
               <div><a class="footer-mobile-additional-link" href="./policy-compliance.html">Policies & Compliances</a></div>
           </div>
           <div class="text-right">

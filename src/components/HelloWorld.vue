@@ -16,14 +16,14 @@
                 </div>
 
                 <ul class="side-menu-nav-list">
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Wellness</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Skin Care</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Color</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Home Care</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">F&B</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Watches</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Tech</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Jewelry</a></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Wellness</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Skin Care</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Color</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Home Care</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">F&B</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Watches</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Tech</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Jewelry</router-link></li>
                 </ul>
 
                 <div class="side-menu-links">
