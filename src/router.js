@@ -7,6 +7,9 @@ import Update from './components/UpdateUser.vue'
 import CareerPage from './pages/CareerPage.vue'
 import OurStory from './pages/OurStory.vue'
 import TheVisionary from './pages/TheVisionary.vue'
+import SuccessStories from './pages/SuccessStories.vue'
+import EventsPage from './pages/EventsPage.vue'
+import ContactUs from './pages/ContactUs.vue'
 
 
 import { createRouter, createWebHistory } from 'vue-router';
@@ -47,8 +50,22 @@ const routes = [
         name:'TheVisionary',
         component:TheVisionary,
         path:'/the-visionary'
-    }
-    
+    },
+    {
+        name:'SuccessStories',
+        component:SuccessStories,
+        path:'/achievers'
+    },
+    {
+        name:'EventsPage',
+        component:EventsPage,
+        path:'/events'
+    },
+    {
+        name:'ContactUs',
+        component:ContactUs,
+        path:'/contact-us'
+    },
 ];
 const router = createRouter({
     history:createWebHistory(),

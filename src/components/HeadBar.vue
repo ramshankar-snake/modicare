@@ -23,10 +23,10 @@
                                 </div>
                                 <div class="nav-dropdown-item-separator"></div>
                                 <div class="nav-dropdown-item">
-                                    <router-link to="achievers" class="nav-dropdown-item-link">Success Stories</router-link>
+                                    <router-link to="/achievers" class="nav-dropdown-item-link">Success Stories</router-link>
                                 </div>
                                 <div class="nav-dropdown-item">
-                                    <a href="@/event.html" class="nav-dropdown-item-link">Events</a>
+                                    <router-link to="/events" class="nav-dropdown-item-link">Events</router-link>
                                 </div>
                                 <div class="nav-dropdown-item">
                                     <router-link to='/Career'  class="nav-dropdown-item-link">Careers</router-link>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <router-link to='/Career'  class="nav-link" >Offers</router-link>
-                    <a class="nav-link" href="@/contact-us.html">Start Your Business</a>
+                    <router-link class="nav-link" to="contact-us">Start Your Business</router-link>
                     <a class="nav-link search-link toggle-nav-search" href="javascript:;"><img src="@/assets/images/icons/icon-search.svg" alt="Search" class="search-link-icon" /></a>
                     <div class="user-menu-dropdown-container nav-dropdown-container">
                         <a class="nav-link sign-in-link toggle-user-menu-dropdown" href="javascript:;">
