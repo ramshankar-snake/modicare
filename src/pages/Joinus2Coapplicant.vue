@@ -1,53 +1,5 @@
 <template>
-    <div class="side-menu-overlay"></div>
-
-<div class="side-menu">
-    <div class="side-menu-container">
-        <div class="side-menu-inner-container">
-            <div class="side-menu-content">
-                <div class="side-menu-close">
-                    <a href="javascript:;" class="btn-side-menu-close"><img src="@/assets/images/icons/icon-close-dark.svg" alt="Close Side Menu" class="btn-side-menu-close-icon" /></a>
-                </div>
-
-                <div class="side-menu-title">All Products</div>
-                <div class="side-menu-title-link">
-                    <a href="javascript:;" class="icon-after icon-chevronright">View Catalogues</a>
-                </div>
-
-                <ul class="side-menu-nav-list">
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Wellness</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Skin Care</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Color</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Home Care</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">F&B</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Watches</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Tech</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Jewelry</a></li>
-                </ul>
-
-                <div class="side-menu-links">
-                    <a href="javascript:;" class="icon-after icon-chevronright side-menu-link">Catalogues</a>
-                    <a href="javascript:;" class="icon-after icon-chevronright side-menu-link">Newly launched</a>
-                </div>
-
-                <div class="side-menu-buttons">
-                    <a href="javascript:;" class="side-menu-button waves-effect">
-                        <img src="@/assets/images/icons/icon-locate-consultant.svg" class="side-menu-button-icon" alt="Locate Consultant" />
-                        <div class="side-menu-button-text">
-                            Locate<br />Consultant
-                        </div>
-                    </a>
-                    <a href="javascript:;" class="side-menu-button waves-effect">
-                        <img src="@/assets/images/icons/icon-locate-store.svg" class="side-menu-button-icon" alt="Locate Consultant" />
-                        <div class="side-menu-button-text">
-                            Locate<br />Store
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<SideMenu></SideMenu>
 
 <div class="mobile-menu">
     <div class="mobile-menu-container">
@@ -173,84 +125,51 @@
 
 <main class="main-container">
     <section class="join-us">
-        <div class="join-us-pd-container modi-container">
-            <div class="join-us-pd-header">
-                <h1 class="join-us-pd-header-title">Become a Consultant</h1>
-            </div>
+        <div class="join-us-container modi-container">
+            <h1 class="join-us-title">Become a consultant</h1>
 
-            <div class="join-us-pd-main">
-                <div class="join-us-pd-left">
-                    <img class="join-us-pd-left-image" src="@/assets/images/join-us/personal-detail-left.png" alt="join us image" />
-                    <div class="join-us-pd-left-title">Just one step away from greater success</div>
-                    <div class="join-us-pd-left-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut aliquip ex ea commodo.</div>
-                    <a href="javascript:;" class="icon-after icon-chevronright join-us-pd-left-link">Business Oppurtunity</a>
-                </div>
+            <h3 class="join-us-sub-title">Do you have a co-applicant?</h3>
 
-                <div class="join-us-pd-right">
-                    <div class="modi-form pd-form">
-                        <h3 class="pd-form-header">Do you know any existing Modicare consultant?</h3>
-
-                        <div class="sponsor-mca-options">
-                            <div class="sponsor-mca-option">
-                                <input type="radio" id="sponsor-yes" name="sponsor-mca" value="Yes" />
-                                <label for="sponsor-yes" class="sponsor-mca-option-label">
-                                    <div class="sponsor-mca-option-content">
-                                        <div class="sponsor-mca-option-title">YES</div>
-
-                                        <div class="sponsor-mca-option-text">I have consultant MCA number</div>
-                                    </div>
-                                </label>
-                            </div>
-
-                            <div class="sponsor-mca-option">
-                                <input type="radio" id="sponsor-no" name="sponsor-mca" value="No" />
-                                <label for="sponsor-no" class="sponsor-mca-option-label">
-                                    <div class="sponsor-mca-option-content">
-                                        <div class="sponsor-mca-option-title">NO</div>
-
-                                        <div class="sponsor-mca-option-text">I do not have consultant MCA number</div>
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="sponsor-yes-container">
-                            <h3 class="pd-form-header">Please enter sponsor MCA</h3>
-
-                            <div class="md-form">
-                                <input type="text" id="form-mca" name="form-mca" class="form-control is-invalid" />
-                                <label for="form-mca">MCA number</label>
-                                <div class="invalid-feedback">Invalid MCA number. Please re-enter or select NO above.</div>
-                            </div>
-                        </div>
-
-                        <router-link to="/join-us-2-personal-details" class="next-btn btn modi-btn modi-btn__primary px-5 pd-form-btn">Proceed</router-link>
+            <div class="mt-3 mb-4"><a href="javascript:;" class="icon-after icon-chevronright">Add later</a></div>
+          
+            <div class="modi-form">
+                <div class="modi-form-section">
+                    <div class="md-form">
+                        <input type="text" id="form-coapp-name" name="form-coapp-name" class="form-control" />
+                        <label for="form-coapp-name">Co-applicant's full name</label>
                     </div>
+
+                    <div class="md-form md-form__date-picker">
+                        <input type="text" id="form-coapp-dob" name="form-coapp-dob" class="form-control" />
+                        <label for="form-coapp-dob">Co-applicant's date of birth (MM/DD/YYYY) </label>
+                    </div>
+
+                    <router-link to="/join-us-2-address-contact" class="btn-submit btn modi-btn modi-btn__primary px-5">Next</router-link>
+
+                    <div class="modi-form-checkbox-container mt-5">
+                        <label for="form-checkbox-2">
+                            <input type="checkbox" id="form-checkbox-2" name="form-checkbox-2" class="" />
+                            <div class="modi-form-checkbox"></div>
+                            <div class="modi-form-checkbox-title">
+                                Co-applicant is 18 years old or above
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="modi-form-section-footer">By clicking proceed, you accept all <a href="javascript:;">terms & conditions</a> to becoming a Modicare consultant</div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="need-help">
-        <div class="need-help-container modi-container">
-            <div class="need-help-header">Need help?</div>
-
-            <div class="need-help-text">
-                <a href="javascript:;">Fill up this form</a> and we'll connect with you
-            </div>
-
-            <div class="need-help-text">
-                You may also <a href="javascript:;">contact us</a> at anytime!
             </div>
         </div>
     </section>
 </main>
 </template>
-
 <script>
+ import SideMenu from '../components/SideMenu.vue';
 export default {
-    name: 'JoinUs',
+   
+    name: 'Joinus2Coapplicant',
+    components: {
+         SideMenu,
+      },
 }
 </script>

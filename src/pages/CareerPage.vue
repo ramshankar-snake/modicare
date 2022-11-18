@@ -1,54 +1,7 @@
 <template>
   
-    <div class="side-menu-overlay"></div>
-
-    <div class="side-menu">
-        <div class="side-menu-container">
-            <div class="side-menu-inner-container">
-                <div class="side-menu-content">
-                    <div class="side-menu-close">
-                        <a href="javascript:;" class="btn-side-menu-close"><img src="@/assets/images/icons/icon-close-dark.svg" alt="Close Side Menu" class="btn-side-menu-close-icon" /></a>
-                    </div>
-    
-                    <div class="side-menu-title">All Products</div>
-                    <div class="side-menu-title-link">
-                        <a href="javascript:;" class="icon-after icon-chevronright">View Catalogues</a>
-                    </div>
-    
-                    <ul class="side-menu-nav-list">
-                        <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Wellness</a></li>
-                        <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Skin Care</a></li>
-                        <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Color</a></li>
-                        <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Home Care</a></li>
-                        <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">F&B</a></li>
-                        <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Watches</a></li>
-                        <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Tech</a></li>
-                        <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Jewelry</a></li>
-                    </ul>
-    
-                    <div class="side-menu-links">
-                        <a href="javascript:;" class="icon-after icon-chevronright side-menu-link">Catalogues</a>
-                        <a href="javascript:;" class="icon-after icon-chevronright side-menu-link">Newly launched</a>
-                    </div>
-    
-                    <div class="side-menu-buttons">
-                        <a href="javascript:;" class="side-menu-button waves-effect">
-                            <img src="@/assets/images/icons/icon-locate-consultant.svg" class="side-menu-button-icon" alt="Locate Consultant" />
-                            <div class="side-menu-button-text">
-                                Locate<br />Consultant
-                            </div>
-                        </a>
-                        <a href="javascript:;" class="side-menu-button waves-effect">
-                            <img src="@/assets/images/icons/icon-locate-store.svg" class="side-menu-button-icon" alt="Locate Consultant" />
-                            <div class="side-menu-button-text">
-                                Locate<br />Store
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
+  <SideMenu></SideMenu>
     
     <div class="mobile-menu">
         <div class="mobile-menu-container">
@@ -1000,13 +953,8 @@
   </template>
   
   <script>
-//   export default {
-//     name: 'CareerPage',
-    
-    // props: {
-    //   msg: String
-    // }
-//   }
+   
+    import SideMenu from '../components/SideMenu.vue';
   import {  Pagination, A11y } from 'swiper';
   import SwiperCore, { Navigation } from "swiper";
   import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
@@ -1024,6 +972,7 @@
       components: {
         Swiper,
         SwiperSlide,
+        SideMenu,
       },
       setup() {
         const onSwiper = (swiper) => {

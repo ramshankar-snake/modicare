@@ -724,6 +724,100 @@
           </div>
       </div>
       </div>
+      <div class="modal modi-modal modi-modal__xs fade" id="modi-customer-login-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <a href="javascript:;" class="modi-modal-close" data-dismiss="modal" aria-label="Close">
+                        <i class="material-icons">close</i>
+                    </a>
+    
+                    <div class="modi-modal-heading mt-2 mb-3 py-1">
+                        Sign in to your Account
+                    </div>
+    
+                    <div class="modi-modal-form">
+                        <div class="modi-form modi-form__mobile">
+                            <div class="md-form">
+                                <input type="text" id="form-email" name="form-email" class="form-control" />
+                                <label for="form-email">Email</label>
+                            </div>
+    
+                            <div class="md-form">
+                                <input type="password" id="form-password" name="form-password" class="form-control" />
+                                <label for="form-password">Password</label>
+                            </div>
+    
+                            <div class="mt-4">
+                                <img src="@/assets/images/captcha_placeholder.png" alt="CAPTCHA" style="width: 70%;height: 50%;" />
+                            </div>
+    
+                            <router-link to="/post/index" class="btn modi-btn modi-btn__xs modi-btn__primary mt-4 px-5 py-1">Sign in</router-link>
+    
+                            <div class="md-form">
+                                <div class="invalid-feedback d-block text-center">Invalid username, please try again.</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="sign-in-footer">
+                        <router-link class="sign-in-footer-forgot-password" to="/forgot-password">Forgot Password</router-link>
+                        <div class="sign-in-footer-text mt-4">Not a customer yet?</div>
+                        <div class="sign-in-footer-text mt-1">
+                            <a href="javscript:;">Register now</a> to enter the world of Modicare!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modi-modal modi-modal__xs fade" id="modi-consultant-login-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <a href="javascript:;" class="modi-modal-close" data-dismiss="modal" aria-label="Close">
+                        <i class="material-icons">close</i>
+                    </a>
+    
+                    <div class="modi-modal-heading mt-2 mb-3 py-1">
+                        Sign in to your Account
+                    </div>
+    
+                    <div class="modi-modal-form">
+                        <div class="modi-form modi-form__mobile">
+                            <div class="md-form">
+                                <input type="text" id="form-email" name="form-email" class="form-control" />
+                                <label for="form-email">MCA No</label>
+                            </div>
+    
+                            <div class="md-form">
+                                <input type="password" id="form-password" name="form-password" class="form-control" />
+                                <label for="form-password">Password</label>
+                            </div>
+    
+                            <div class="mt-4">
+                                <img src="@/assets/images/captcha_placeholder.png" alt="CAPTCHA" style="width: 70%;height: 50%;" />
+                            </div>
+    
+                            <router-link to="/post/index" class="btn modi-btn modi-btn__xs modi-btn__primary mt-4 px-5 py-1">Sign in</router-link>
+    
+                            <div class="md-form">
+                                <div class="invalid-feedback d-block text-center">Invalid username, please try again.</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="sign-in-footer">
+                        <router-link class="sign-in-footer-forgot-password" to="/forgot-password">Forgot Password</router-link>
+                        <div class="sign-in-footer-text mt-4">Not a consultant yet?</div>
+                        <div class="sign-in-footer-text mt-1">
+                            <a href="javscript:;">Register now</a> to enter the world of Modicare!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </template>
     
     <script>

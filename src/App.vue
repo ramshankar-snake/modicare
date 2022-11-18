@@ -1,40 +1,34 @@
+
 <template>
-  
-    <Headbar></Headbar>
-    <router-view />
-    <FooterBar></FooterBar>
-
-
-
-  
-   
-
  
+    <component :is="layout"></component>
+
 </template>
 
 <script>
-
-import Headbar from './components/HeadBar.vue'
-import FooterBar from './components/FooterBar.vue'
-
+import PostLayout from './layouts/PostLayout'
+import PreLayout from './layouts/PreLayout'
 
 export default {
-  name: 'App',
   components: {
-    Headbar,
-    FooterBar
+    PostLayout,
+    PreLayout
+    // define as many layouts you want for the application
+  },
+  data() {
+    return {
+      layout: null,
+    };
+  },
+  watch: {
+    $route(to) {
+      if (to.meta.layout !== undefined) {
+        this.layout = to.meta.layout;
+      } else {
+        this.layout = "PreLayout";
+      }
+    },
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  
-}
-</style>
-
+view rawApp.vue hosted with ❤ by GitHub

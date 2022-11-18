@@ -11,22 +11,22 @@
 
                 <div class="side-menu-title">All Products</div>
                 <div class="side-menu-title-link">
-                    <a href="javascript:;" class="icon-after icon-chevronright">View Catalogues</a>
+                    <a href="catalogues.html" class="icon-after icon-chevronright">View Catalogues</a>
                 </div>
 
                 <ul class="side-menu-nav-list">
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Wellness</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Skin Care</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Color</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Home Care</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">F&B</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Watches</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Tech</a></li>
-                    <li class="side-menu-nav-list-item waves-effect"><a href="./product-listing.html">Jewelry</a></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Wellness</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Skin Care</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Color</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Home Care</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">F&B</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Watches</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Tech</router-link></li>
+                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Jewelry</router-link></li>
                 </ul>
 
                 <div class="side-menu-links">
-                    <a href="javascript:;" class="icon-after icon-chevronright side-menu-link">Catalogues</a>
+                    <a href="catalogues.html" class="icon-after icon-chevronright side-menu-link">Catalogues</a>
                     <a href="javascript:;" class="icon-after icon-chevronright side-menu-link">Newly launched</a>
                 </div>
 
@@ -66,7 +66,7 @@
                         <li class="mobile-menu-nav-list-item"><a href="./index.html">Home</a></li>
                         <li class="mobile-menu-nav-list-item"><a href="javascript:;" class="toggle-mobile-menu-sub-menu icon-after icon-chevronright" data-target="mobile-menu-about-menu">About</a></li>
                         <li class="mobile-menu-nav-list-item"><a href="./careers.html">Offers</a></li>
-                        <li class="mobile-menu-nav-list-item"><a href="./business-opportunity.html">Business Opportunity</a></li>
+                        <li class="mobile-menu-nav-list-item"><a href="https://azadi.modicare.com" target="_blank">Business Opportunity</a></li>
                     </ul>
 
                     <div class="mobile-menu-social-links">
@@ -94,11 +94,14 @@
                         </div>
 
                         <div class="mobile-menu-search-go-to-item">
-                            <a href="javascript:;">Success Stories</a>
+                            <a href="./achievers.html">Success Stories</a>
                         </div>
 
                         <div class="mobile-menu-search-go-to-item">
-                            <a href="./business-opportunity.html">Business Opportunity</a>
+                            <a href="https://azadi.modicare.com">Business Opportunity</a>
+                        </div>
+                        <div class="mobile-menu-search-go-to-item">
+                            <a href="./quick-pay.html">Credit M-Wallet</a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +128,7 @@
                         </ul>
 
                         <div class="mobile-menu-sub-menu-links">
-                            <a href="javascript:;" class="icon-after icon-chevronright mobile-menu-sub-menu-link">View Catalogues</a>
+                            <a href="catalogues.html" class="icon-after icon-chevronright mobile-menu-sub-menu-link">View Catalogues</a>
                         </div>
 
                         <div class="mobile-menu-sub-menu-locate-links">
@@ -170,87 +173,9 @@
         </div>
     </div>
 </div>
-
-<main class="main-container">
-    <section class="join-us">
-        <div class="join-us-pd-container modi-container">
-            <div class="join-us-pd-header">
-                <h1 class="join-us-pd-header-title">Become a Consultant</h1>
-            </div>
-
-            <div class="join-us-pd-main">
-                <div class="join-us-pd-left">
-                    <img class="join-us-pd-left-image" src="@/assets/images/join-us/personal-detail-left.png" alt="join us image" />
-                    <div class="join-us-pd-left-title">Just one step away from greater success</div>
-                    <div class="join-us-pd-left-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut aliquip ex ea commodo.</div>
-                    <a href="javascript:;" class="icon-after icon-chevronright join-us-pd-left-link">Business Oppurtunity</a>
-                </div>
-
-                <div class="join-us-pd-right">
-                    <div class="modi-form pd-form">
-                        <h3 class="pd-form-header">Do you know any existing Modicare consultant?</h3>
-
-                        <div class="sponsor-mca-options">
-                            <div class="sponsor-mca-option">
-                                <input type="radio" id="sponsor-yes" name="sponsor-mca" value="Yes" />
-                                <label for="sponsor-yes" class="sponsor-mca-option-label">
-                                    <div class="sponsor-mca-option-content">
-                                        <div class="sponsor-mca-option-title">YES</div>
-
-                                        <div class="sponsor-mca-option-text">I have consultant MCA number</div>
-                                    </div>
-                                </label>
-                            </div>
-
-                            <div class="sponsor-mca-option">
-                                <input type="radio" id="sponsor-no" name="sponsor-mca" value="No" />
-                                <label for="sponsor-no" class="sponsor-mca-option-label">
-                                    <div class="sponsor-mca-option-content">
-                                        <div class="sponsor-mca-option-title">NO</div>
-
-                                        <div class="sponsor-mca-option-text">I do not have consultant MCA number</div>
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="sponsor-yes-container">
-                            <h3 class="pd-form-header">Please enter sponsor MCA</h3>
-
-                            <div class="md-form">
-                                <input type="text" id="form-mca" name="form-mca" class="form-control is-invalid" />
-                                <label for="form-mca">MCA number</label>
-                                <div class="invalid-feedback">Invalid MCA number. Please re-enter or select NO above.</div>
-                            </div>
-                        </div>
-
-                        <router-link to="/join-us-2-personal-details" class="next-btn btn modi-btn modi-btn__primary px-5 pd-form-btn">Proceed</router-link>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="need-help">
-        <div class="need-help-container modi-container">
-            <div class="need-help-header">Need help?</div>
-
-            <div class="need-help-text">
-                <a href="javascript:;">Fill up this form</a> and we'll connect with you
-            </div>
-
-            <div class="need-help-text">
-                You may also <a href="javascript:;">contact us</a> at anytime!
-            </div>
-        </div>
-    </section>
-</main>
 </template>
-
 <script>
 export default {
-    name: 'JoinUs',
+    name: 'SideMenu',
 }
 </script>

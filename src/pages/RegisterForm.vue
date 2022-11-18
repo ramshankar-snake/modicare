@@ -238,7 +238,7 @@
                         </div>
     
                         <div class="d-flex justify-content-center mt-5">
-                            <a href="./register-form-2.html" class="btn modi-btn modi-btn__primary modi-btn__xs px-5 py-2">Proceed</a>
+                            <router-link to="/register-form-2" class="btn modi-btn modi-btn__primary modi-btn__xs px-5 py-2">Proceed</router-link>
                             <a href="javascript:;" class="btn modi-btn modi-btn__white modi-btn__xs px-5 py-2 ml-3">Cancel</a>
                         </div>
     

@@ -1,5 +1,4 @@
 <template>
-   
     <SideMenu></SideMenu>
     <div class="mobile-menu">
         <div class="mobile-menu-container">
@@ -123,50 +122,69 @@
         </div>
     </div>
     
-    <main class="main-container">
-        <section class="sign-in">
-            <div class="sign-in-container modi-container">
-                <h1 class="sign-in-title">Forgot Password</h1>
+    <main class="main-container bg-light-blue">
+        <section class="registration-page py-md-7 py-5">
+            <div class="modi-container modi-container__xs">
+                <h1 class="text-center mb-5">Verification</h1>
     
-                <h3 class="mt-3">Please fill in the details below</h3>
-    
-                <div class="sign-in-form modi-form">
-                    <div class="sign-in-form-section">
-                        <div class="md-form">
-                            <input type="text" id="form-mca" name="form-mca" class="form-control" />
-                            <label for="form-mca">Enter MCA</label>
+                <div class="registration-steps-container">
+                    <div class="modi-steps modi-steps__no-responsive">
+                        <div class="step completed">
+                            <div class="step-title">1</div>
+                            <div class="step-icon-wrap">
+                                <div class="step-icon"></div>
+                            </div>
                         </div>
-    
-                        <div class="mt-4">
-                            <img src="@/assets/images/captcha_placeholder.png" alt="CAPTCHA" />
+                        <div class="step completed">
+                            <div class="step-title">2</div>
+                            <div class="step-icon-wrap">
+                                <div class="step-icon"></div>
+                            </div>
                         </div>
-                
-                        <router-link to="/forgot-password-confirmation" class="next-btn btn modi-btn modi-btn__primary px-5 sign-in-form-button">Submit</router-link>
-    
-                        <div class="md-form">
-                            <div class="invalid-feedback d-block text-center">Please click on the checkbox above</div>
+                        <div class="step">
+                            <div class="step-title">3</div>
+                            <div class="step-icon-wrap">
+                                <div class="step-icon"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
     
-                <div class="sign-in-footer">
-                    <div class="sign-in-footer-text">Not a consultant yet?</div>
-                    <div class="sign-in-footer-text"><a href="javscript:;">Register now</a> to enter the world of Modicare!</div>
-                    <div class="sign-in-footer-text">Trouble logging in? Feel free to <a href="javscript:;">contact us</a> anytime.</div>
-                </div>
+                <div class="mt-6">
+                    <div class="modi-form modi-form__secondary">
+                        <div class="font-semibold mb-3">One time password</div>
     
+                        <div class="md-form">
+                            <input type="text" id="form-otp" name="form-otp" class="form-control" />
+                            <label for="form-otp">Enter OTP</label>
+                        </div>
+    
+                        <div class="otp-sent font-size-xs">
+                            The OTP has been sent on your registered mobile number
+                        </div>
+    
+                        <div class="d-flex mt-5 mb-7">
+                            <router-link to="./register-form-3" class="btn modi-btn modi-btn__primary modi-btn__xs px-5 py-2">Submit</router-link>
+                            <div class="otp-resend-container ml-3">
+                                <a href="javascript:;" class="btn-resend-otp btn disabled modi-btn modi-btn__white modi-btn__xs px-5 py-2">Re-send</a>
+                                <div class="otp-resend-countdown">00:45</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 </template>
 <script>
- 
-    import SideMenu from '../components/SideMenu.vue';
+ import SideMenu from '../components/SideMenu.vue';
 export default {
-    name: 'ForgotPassword',
+   
+    name: 'RegisterForm2',
     components: {
       
-        SideMenu
-    }
+       
+        SideMenu,
+      },
 }
 </script>
