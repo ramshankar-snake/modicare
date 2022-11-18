@@ -20,6 +20,9 @@ import JoinUs from './pages/JoinUs.vue'
 import Joinus2Personaldetails from './pages/Joinus2Personaldetails.vue'
 import Joinus2Coapplicant from './pages/Joinus2Coapplicant.vue'
 import Joinus2Addresscontact from './pages/Joinus2Addresscontact.vue'
+import Joinus2Bankdetails from './pages/Joinus2Bankdetails.vue'
+import Joinus2Confirmation from './pages/Joinus2Confirmation.vue'
+
 import TermsConditions from './pages/TermsConditions.vue'
 import ForgotPassword from './pages/ForgotPassword.vue'
 import ForgotPasswordConfirmation from './pages/ForgotPasswordConfirmation.vue'
@@ -146,6 +149,18 @@ const routes = [
         component: Joinus2Addresscontact,
          meta: { layout: 'PreLayout' },
         path: '/join-us-2-address-contact'
+    },
+    {
+        name: 'Joinus2Bankdetails',
+        component: Joinus2Bankdetails,
+         meta: { layout: 'PreLayout' },
+        path: '/join-us-2-bank-details'
+    },
+    {
+        name: 'Joinus2Confirmation',
+        component: Joinus2Confirmation,
+         meta: { layout: 'PreLayout' },
+        path: '/join-us-2-confirmation'
     },
     {
         name: 'TermsConditions',
