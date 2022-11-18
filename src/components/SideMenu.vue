@@ -26,17 +26,17 @@
                 </ul>
 
                 <div class="side-menu-links">
-                    <a href="catalogues.html" class="icon-after icon-chevronright side-menu-link">Catalogues</a>
-                    <a href="javascript:;" class="icon-after icon-chevronright side-menu-link">Newly launched</a>
+                    <router-link to="/catalogues" class="icon-after icon-chevronright side-menu-link">Catalogues</router-link>
+                    <router-link to="javascript:;" class="icon-after icon-chevronright side-menu-link">Newly launched</router-link>
                 </div>
 
                 <div class="side-menu-buttons">
-                    <a href="javascript:;" class="side-menu-button waves-effect">
+                    <router-link to="/consultant-locator" class="side-menu-button waves-effect">
                         <img src="@/assets/images/icons/icon-locate-consultant.svg" class="side-menu-button-icon" alt="Locate Consultant" />
                         <div class="side-menu-button-text">
                             Locate<br />Consultant
                         </div>
-                    </a>
+                    </router-link>
                     <a href="javascript:;" class="side-menu-button waves-effect">
                         <img src="@/assets/images/icons/icon-locate-store.svg" class="side-menu-button-icon" alt="Locate Consultant" />
                         <div class="side-menu-button-text">

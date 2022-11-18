@@ -123,59 +123,81 @@
     </div>
     
     <main class="main-container">
-        <section class="join-us">
-            <div class="join-us-pd-container modi-container">
-                <div class="join-us-pd-header mb-5">
-                    <h1 class="join-us-pd-header-title">Become a Consultant</h1>
-                </div>
+        <div class="locator-container modi-container" style="padding: 90px 0;margin-top: 30px;">
+            <section class="locator-header">
+                <h1 class="locator-header-text">Find a consultant near you!</h1>
+            </section>
+            
+            <section class="locator-search">
+                <div class="locator-search-container">
     
-                <div class="modi-form pd-form pt-4">
-                    <h3 class="pd-form-header text-center mb-4">Personal Details</h3>
-    
-                    <div class="md-form">
-                        <input type="text" id="form-name" name="form-name" class="form-control" />
-                        <label for="form-name">Enter full name</label>
-                    </div>
-    
-                    <div class="md-form md-form__date-picker">
-                        <input type="text" id="form-dob" name="form-dob" class="form-control" />
-                        <label for="form-dob">Date of birth (MM/DD/YYYY)</label>
-                    </div>
-    
-                    <div class="modi-form-checkbox-container modi-form-checkbox-container__px">
-                        <label for="form-checkbox-1">
-                            <input type="checkbox" id="form-checkbox-1" name="form-checkbox-1" class="" />
-                            <div class="modi-form-checkbox"></div>
-                            <div class="modi-form-checkbox-title">
-                                I have a co-applicant
+                    <div class="modi-search-line">
+                        <div class="modi-search-line-input-container">
+                            <div class="modi-search-line-icon-container">
+                                <img src="@/assets/images/icons/icon-search-dark.svg" alt="Search" class="modi-search-line-icon" />
                             </div>
-                        </label>
+                            <input type="text" class="modi-search-line-input" name="modi-search-line-input"
+                                placeholder="Search by state, city, zone or pin code" id="locator-search-input"/>
+                        </div>
                     </div>
     
-                    <router-link to="/join-us-2-co-applicant" class="next-btn btn modi-btn modi-btn__primary px-5 pd-form-btn">Proceed</router-link>
-                    <div class="pd-form-btn-error">Please verify age below</div>
+                    <div class="locator-search-results" id="locator-search-results">
+                        <div class="locator-search-results-heading">Stores matching your search:</div>
     
-                    <div class="modi-form-checkbox-container text-center mt-3">
-                        <label for="form-checkbox-2">
-                            <input type="checkbox" id="form-checkbox-2" name="form-checkbox-2" class="" />
-                            <div class="modi-form-checkbox"></div>
-                            <div class="modi-form-checkbox-title">
-                                I'm 18 years old or above
-                            </div>
-                        </label>
+                        <div class="locator-search-results-item">
+                            <a href="javascript:;">Gandhi Nagar, Jammu</a>
+                        </div>
+    
+                        <div class="locator-search-results-item">
+                            <a href="javascript:;">Gandhipur, Indore, Madhya Pradesh</a>
+                        </div>
+    
+                        <div class="locator-search-results-item">
+                            <a href="javascript:;">Gandhi Ghat, Darbhanga, Bihar</a>
+                        </div>
+    
+                        <div class="locator-search-results-item">
+                            <a href="javascript:;">Gandhi Ghar, Darbhanga, Bihar</a>
+                        </div>
+    
+                        <div class="locator-search-results-item">
+                            <a href="javascript:;">Gandhi Ghar, Darbhanga, Bihar</a>
+                        </div>
+    
+                        <div class="locator-search-results-item">
+                            <a href="javascript:;">Gandhi Ghar, Darbhanga, Bihar</a>
+                        </div>
                     </div>
+                    
+                    <a class="locator-search-searchby toggle-search-by">
+                        <div class="locator-search-searchby-container" id="locator-search-searchby-container" data-search-by="area">
+                            <div class="locator-search-searchby-text" id="locator-search-searchby-text">Search by consultant info</div>
+                            <img class="locator-search-searchby-image" src="@/assets/images/icons/icon-refresh.svg" alt="refresh">
+                        </div>
+                    </a>
     
-                    <div class="join-us-pd-right-footer">By clicking proceed, you accept all <router-link to="/terms-and-conditions">terms & conditions</router-link> to becoming a Modicare consultant</div>
                 </div>
-            </div>
-        </section>
+            </section>
+    
+            <section class="locator-footer">
+                <a href="javascript:;" class="icon-after icon-chevronright locator-footer-link">Consultants near me</a>
+                <div class="locator-footer-end-container">
+                    <div>
+                        <div class="locator-footer-text">Want to become a Modicare consultant?</div>
+                        <div class="locator-footer-text"><a href="javascript:;">Register</a> now!</div>
+                    </div>
+                    <img src='@/assets/images/locator/location-gray.svg' class="locator-footer-image" alt="Consultant Locator" />
+                </div>
+            </section>
+    
+        </div>
     </main>
 </template>
 <script>
  import SideMenu from '../components/SideMenu.vue';
 export default {
    
-    name: 'Joinus2Personaldetails',
+    name: 'ConsultantLocator',
     components: {
          SideMenu,
       },

@@ -123,61 +123,42 @@
     </div>
     
     <main class="main-container">
-        <section class="join-us">
-            <div class="join-us-pd-container modi-container">
-                <div class="join-us-pd-header mb-5">
-                    <h1 class="join-us-pd-header-title">Become a Consultant</h1>
-                </div>
+        <section class="tnc">
+            <div class="tnc-container modi-container">
+                <div class="tnc-section">
+                    <h1 class="tnc-section-header" style="text-align: center;">Policies and Compliances</h1>
+                    <h3>Code of Ethics And Rules of Conduct</h3>
+                    <p>The Modicare Rules of Conduct define and establish certain principles to be followed in the development and maintenance of a Modicare Distributorship and the rights, duties, and responsibilities of each Modicare Consultant. The Rules are designed to preserve the benefits available to all the Consultants under Modicare Sales and Marketing Plan also known as the Samir Modi Global Plan. To access the Code of Ethics and Rules of Conduct for Modicare Consultants, please click on the link below.</p>
+                    <p>Modicare Code of Ethics and Rules of Conduct <a href="https://www.modicare.com/downloads/Global-Code-of-Ethics1.pdf" target="_blank"> click here to for the document</a></p>
     
-                <div class="modi-form pd-form pt-4">
-                    <h3 class="pd-form-header text-center mb-4">Personal Details</h3>
+                    <h3>Top Six Rules</h3>
+                    <p>For your ease of reference and understanding, we have picked the most referred six Code of Ethics guidelines for best business practice.<a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> click here to for the document</a></p>
     
-                    <div class="md-form">
-                        <input type="text" id="form-name" name="form-name" class="form-control" />
-                        <label for="form-name">Enter full name</label>
-                    </div>
+                    <p>Here is a Video to narrate these Top Six Rules you can use to promote the best practices Click on the desired language option to access; <a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> In Hindi,</a><a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> In English</a></p>
     
-                    <div class="md-form md-form__date-picker">
-                        <input type="text" id="form-dob" name="form-dob" class="form-control" />
-                        <label for="form-dob">Date of birth (MM/DD/YYYY)</label>
-                    </div>
+                    <p>Download the Frequently asked Questions for better understanding of these six rules<a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> click here to for the document</a></p>
     
-                    <div class="modi-form-checkbox-container modi-form-checkbox-container__px">
-                        <label for="form-checkbox-1">
-                            <input type="checkbox" id="form-checkbox-1" name="form-checkbox-1" class="" />
-                            <div class="modi-form-checkbox"></div>
-                            <div class="modi-form-checkbox-title">
-                                I have a co-applicant
-                            </div>
-                        </label>
-                    </div>
+                    <h3>Other Policies</h3>
+                    <p>Click here for<a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> Joining as a Modicare Consultant</a></p>
+                    <p>Click here for<a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> Social Media and Content Guidelines</a></p>
+                    <p>Click here for<a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> Distribution Point (DP) Agreement</a></p>
+                    <p>Click here for<a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> Compliance Documents</a></p>
+                    <p>Click here for<a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> Product Return Form</a></p>
+                    <p>Click here for<a href="https://www.modicare.com/downloads/Code_of_Ethics_under_top_rules.pdf" target="_blank"> Customer Order Receipt</a></p>
     
-                    <router-link to="/join-us-2-co-applicant" class="next-btn btn modi-btn modi-btn__primary px-5 pd-form-btn">Proceed</router-link>
-                    <div class="pd-form-btn-error">Please verify age below</div>
-    
-                    <div class="modi-form-checkbox-container text-center mt-3">
-                        <label for="form-checkbox-2">
-                            <input type="checkbox" id="form-checkbox-2" name="form-checkbox-2" class="" />
-                            <div class="modi-form-checkbox"></div>
-                            <div class="modi-form-checkbox-title">
-                                I'm 18 years old or above
-                            </div>
-                        </label>
-                    </div>
-    
-                    <div class="join-us-pd-right-footer">By clicking proceed, you accept all <router-link to="/terms-and-conditions">terms & conditions</router-link> to becoming a Modicare consultant</div>
+                                    
                 </div>
             </div>
         </section>
     </main>
 </template>
+
 <script>
- import SideMenu from '../components/SideMenu.vue';
+import SideMenu from '../components/SideMenu.vue';
 export default {
-   
-    name: 'Joinus2Personaldetails',
-    components: {
-         SideMenu,
-      },
+    name: 'PoliciesCompliance',
+    components:{
+        SideMenu
+    }
 }
 </script>

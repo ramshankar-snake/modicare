@@ -156,7 +156,7 @@
                         </label>
                     </div>
 
-                    <div class="modi-form-section-footer">By clicking proceed, you accept all <a href="javascript:;">terms & conditions</a> to becoming a Modicare consultant</div>
+                    <div class="modi-form-section-footer">By clicking proceed, you accept all <router-link to="/terms-and-conditions">terms & conditions</router-link> to becoming a Modicare consultant</div>
                 </div>
             </div>
         </div>

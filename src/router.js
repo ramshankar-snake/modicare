@@ -27,6 +27,10 @@ import TermsConditions from './pages/TermsConditions.vue'
 import ForgotPassword from './pages/ForgotPassword.vue'
 import ForgotPasswordConfirmation from './pages/ForgotPasswordConfirmation.vue'
 import ProductListing from './pages/ProductListing.vue'
+import DisclaimerPage from './pages/DisclaimerPage.vue'
+import PrivacyPolicy from './pages/PrivacyPolicy.vue'
+import PoliciesCompliance from './pages/PoliciesCompliance.vue'
+import ConsultantLocator from './pages/ConsultantLocator.vue'
 
 
 import IndexPage from './pages/post/IndexPage.vue'
@@ -187,6 +191,31 @@ const routes = [
         path: '/product-listing'
     },
     {
+        name: 'DisclaimerPage',
+        component: DisclaimerPage,
+         meta: { layout: 'PreLayout' },
+        path: '/disclaimer'
+    },
+    {
+        name: 'PrivacyPolicy',
+        component: PrivacyPolicy,
+         meta: { layout: 'PreLayout' },
+        path: '/privacy-policy'
+    },
+    {
+        name: 'PoliciesCompliance',
+        component: PoliciesCompliance,
+         meta: { layout: 'PreLayout' },
+        path: '/policy-compliance'
+    },
+    {
+        name: 'ConsultantLocator',
+        component: ConsultantLocator,
+         meta: { layout: 'PreLayout' },
+        path: '/consultant-locator'
+    },
+
+    {
         name: 'IndexPage',
         component: IndexPage,
         meta: { layout: 'Post-layout' },
@@ -234,6 +263,13 @@ const routes = [
 
         meta: { layout: 'Post-layout' }, path: '/post/contact-us'
     },
+    {
+        name: 'PostTermsConditions',
+        component: TermsConditions,
+         meta: { layout: 'PostLayout' },
+        path: '/post/terms-and-conditions'
+    },
+  
 ];
 const router = createRouter({
     history: createWebHistory(),

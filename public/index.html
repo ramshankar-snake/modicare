@@ -6475,5 +6475,144 @@ $(document).on('change', '[name=sponsor-mca]', function() {
 });
 });
         </script>
+
+        <script>
+          $(document).ready(function() {
+    var formDOB = $('#form-dob');
+
+    formDOB.daterangepicker({
+        autoUpdateInput: false,
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'),10) + 1
+    });
+
+    formDOB.on('apply.daterangepicker', function(ev, picker) {
+        var input = $(this);
+        input.val(picker.startDate.format('MM/DD/YYYY'));
+        input.trigger('change');
+    });
+
+    formDOB.on('cancel.daterangepicker', function(ev, picker) {
+        var input = $(this);
+        input.val('');
+        input.trigger('change');
+    });
+});
+
+
+$(document).ready(function() {
+    var formDOB = $('#form-coapp-dob');
+
+    formDOB.daterangepicker({
+        autoUpdateInput: false,
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'),10) + 1
+    });
+
+    formDOB.on('apply.daterangepicker', function(ev, picker) {
+        var input = $(this);
+        input.val(picker.startDate.format('MM/DD/YYYY'));
+        input.trigger('change');
+    });
+
+    formDOB.on('cancel.daterangepicker', function(ev, picker) {
+        var input = $(this);
+        input.val('');
+        input.trigger('change');
+    });
+});
+
+$(document).ready(function() {
+
+$(document).on('input', '.modi-sort-code-input', function() {
+    var input = $(this);
+    if (input.val().length > input.data('maxLength')) {
+        input.val(input.val().slice(0, input.data('maxLength')));
+    }
+});
+});
+</script>
+<script>
+  var presets = {
+    "area" : {
+        "placeholder": "Search by state, city, zone or pin code",
+        "placeholderMobile": "Search by area",
+        "searchby_text": "Search by consultant info"
+    },
+    "info" : {
+        "placeholder": "Search by consultant name, MCA number or phone",
+        "placeholderMobile": "Search by MCA or phone",
+        "searchby_text": "Search by area"
+    }
+};
+
+$(document).ready(function() {
+    updateSearchByText();
+    $('.locator-search').css('visibility', 'visible');
+
+    $(window).resize(function() {
+        updateSearchByText();
+    });
+
+    $(document).on('keyup', '#locator-search-input', function() {
+        onSearch();
+    });
+
+    $(document).on('click', '.toggle-search-by', function() {
+        onToggleSearchBy();
+    });
+});
+
+function onSearch() {
+    var input, searchResults;
+    input = $('#locator-search-input');
+    searchResults = $('#locator-search-results');
+
+    var isSearched = input.val().length > 0;
+
+    if (isSearched) {
+        if (searchResults.css('visibility') === 'hidden') {
+            searchResults.css({
+                visibility: 'visible',
+                opacity: 1
+            });
+        }
+    } else {
+        if (searchResults.css('visibility') !== 'hidden') {
+            searchResults.css({
+                visibility: 'hidden',
+                opacity: 0
+            });
+        }
+    }
+}
+
+function onToggleSearchBy() {
+    var searchByDiv = $('#locator-search-searchby-container');
+    var newSearchBy;
+
+    if (searchByDiv.data("searchBy") === "area") {
+        newSearchBy = "info"
+    } else {
+        newSearchBy = "area"
+    }
+
+    searchByDiv.data("searchBy", newSearchBy);
+
+    updateSearchByText();
+}
+
+function updateSearchByText() {
+    var searchByDiv = $('#locator-search-searchby-container');
+    var searchByInput = $('#locator-search-input');
+    var searchByText = $('#locator-search-searchby-text');
+    searchByInput[0].placeholder = window.innerWidth >= 768 ? presets[searchByDiv.data("searchBy")].placeholder : presets[searchByDiv.data("searchBy")].placeholderMobile;
+    searchByText[0].innerText = presets[searchByDiv.data("searchBy")].searchby_text;
+}
+  </script>
   </body>
   </html>

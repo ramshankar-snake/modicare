@@ -7,7 +7,7 @@
                   <ul class="footer-section-links-list">
                       <li><a class="footer-section-link" target="_blank" href="https://azadi.modicare.com">Business opportunity</a></li>
                       <li><a class="footer-section-link" href="javascript:;">Exclusive access to programs</a></li>
-                      <li><a class="footer-section-link" href="./consultant-locator.html">Find a consultant</a></li>
+                      <li><router-link class="footer-section-link" to="/consultant-locator">Find a consultant</router-link></li>
                       <li><a class="footer-section-link" href="./investor-information.html">Investor Information</a></li>
                   </ul>
               </div>
@@ -23,8 +23,8 @@
               <div class="footer-section">
                   <div class="footer-section-title">About Modicare</div>
                   <ul class="footer-section-links-list">
-                      <li><a class="footer-section-link" href="./our-story.html">Our story</a></li>
-                      <li><a class="footer-section-link" href="./the-visionary.html">The Visionary</a></li>
+                      <li><router-link class="footer-section-link" to="/our-story">Our story</router-link></li>
+                      <li><router-link class="footer-section-link" to="/the-visionary">The Visionary</router-link></li>
                   </ul>
               </div>
               <div class="footer-section">
