@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "image": "products-lips-1.png",
+    "title": "Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C",
+    "size": "30ml",
+    "price": 430,
+    "category": "L"
+  },
+  {
+    "id": "2",
+    "image": "products-lips-2.png",
+    "title": "Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C",
+    "size": "60ml",
+    "price": 430,
+    "category": "L"
+  },
+  {
+    "id": "3",
+    "image": "products-lips-3.png",
+    "title": "Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C",
+    "size": "90ml",
+    "price": 430,
+    "category": "L"
+  }
+  ,
+  {
+    "id": "4",
+    "image": "products-lips-4.png",
+    "title": "Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C",
+    "size": "30ml",
+    "price": 430,
+    "category": "L"
+  }
+]

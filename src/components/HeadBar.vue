@@ -4,7 +4,7 @@
         <div class="modi-container nav-container">
             <div class="nav-links">
                 <div class="nav-links-desktop">
-                    <router-link to='/Career'  class="nav-link logo-link" href="@/index.html">
+                    <router-link to='/'  class="nav-link logo-link">
                         <img src="@/assets/images/logo.svg" class="logo" alt="Modicare" />
                     </router-link>
                     <a class="nav-link toggle-side-menu" href="javascript:;">
