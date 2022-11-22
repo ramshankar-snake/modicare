@@ -7,7 +7,7 @@
                     <router-link to='/'  class="nav-link logo-link">
                         <img src="@/assets/images/logo.svg" class="logo" alt="Modicare" />
                     </router-link>
-                    <a class="nav-link toggle-side-menu" href="javascript:;">
+                    <a class="nav-link toggle-side-menu"  href="javascript:;">
                         <img src="@/assets/images/icons/icon-burger-menu-secondary.svg" alt="Shop" class="mr-2" />
                         Shop
                     </a>
@@ -2721,5 +2721,6 @@
   <script>
   export default {
     name: "HeaderBar",
+    
   };
   </script>

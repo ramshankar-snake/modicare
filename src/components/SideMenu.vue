@@ -6,7 +6,7 @@
         <div class="side-menu-inner-container">
             <div class="side-menu-content">
                 <div class="side-menu-close">
-                    <a href="javascript:;" class="btn-side-menu-close"><img src="@/assets/images/icons/icon-close-dark.svg" alt="Close Side Menu" class="btn-side-menu-close-icon" /></a>
+                    <a href="javascript:;" class="btn-side-menu-close" ><img src="@/assets/images/icons/icon-close-dark.svg" alt="Close Side Menu" class="btn-side-menu-close-icon" /></a>
                 </div>
 
                 <div class="side-menu-title">All Products</div>
@@ -82,26 +82,26 @@
                         <div class="mobile-menu-search-go-to-heading">Go to</div>
 
                         <div class="mobile-menu-search-go-to-item">
-                            <a href="./the-visionary.html">The Vision</a>
+                            <router-link to="/the-visionary">The Vision</router-link>
                         </div>
 
                         <div class="mobile-menu-search-go-to-item">
-                            <a href="./event.html">Events & Programs</a>
+                            <router-link to="/event">Events & Programs</router-link>
                         </div>
 
                         <div class="mobile-menu-search-go-to-item">
-                            <a href="./event-gallery.html">Event Gallery</a>
+                            <router-link to="/event-gallery">Event Gallery</router-link>
                         </div>
 
                         <div class="mobile-menu-search-go-to-item">
-                            <a href="./achievers.html">Success Stories</a>
+                            <router-link to="/achievers">Success Stories</router-link>
                         </div>
 
                         <div class="mobile-menu-search-go-to-item">
-                            <a href="https://azadi.modicare.com">Business Opportunity</a>
+                            <router-link to="https://azadi.modicare.com">Business Opportunity</router-link>
                         </div>
                         <div class="mobile-menu-search-go-to-item">
-                            <a href="./quick-pay.html">Credit M-Wallet</a>
+                            <router-link to="/quick-pay">Credit M-Wallet</router-link>
                         </div>
                     </div>
                 </div>
@@ -160,12 +160,12 @@
 
                     <div class="mobile-menu-sub-menu-content-section">
                         <ul class="mobile-menu-sub-menu-nav-list">
-                            <li class="mobile-menu-sub-menu-nav-list-item"><a href="./our-story.html">Our Story</a></li>
-                            <li class="mobile-menu-sub-menu-nav-list-item"><a href="./the-visionary.html">The Visionary</a></li>
+                            <li class="mobile-menu-sub-menu-nav-list-item"><router-link to="/our-story">Our Story</router-link></li>
+                            <li class="mobile-menu-sub-menu-nav-list-item"><router-link to="/the-visionary">The Visionary</router-link></li>
                             <li class="mobile-menu-sub-menu-nav-list-separator"></li>
-                            <li class="mobile-menu-sub-menu-nav-list-item"><a href="./achievers.html">Success Stories</a></li>
-                            <li class="mobile-menu-sub-menu-nav-list-item"><a href="./event.html">Events</a></li>
-                            <li class="mobile-menu-sub-menu-nav-list-item"><a href="./careers.html">Careers</a></li>
+                            <li class="mobile-menu-sub-menu-nav-list-item"><router-link to="/achievers">Success Stories</router-link></li>
+                            <li class="mobile-menu-sub-menu-nav-list-item"><router-link to="/event">Events</router-link></li>
+                            <li class="mobile-menu-sub-menu-nav-list-item"><router-link to="/careers">Careers</router-link></li>
                         </ul>
                     </div>
                 </div>
@@ -176,6 +176,6 @@
 </template>
 <script>
 export default {
-    name: 'SideMenu',
+    name: 'SideMenu'
 }
 </script>

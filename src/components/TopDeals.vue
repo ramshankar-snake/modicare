@@ -14,14 +14,7 @@
     <div id="top-deals-products-carousel" class="product-listing-carousel-container modi-container mb-5">
         <div class="product-listing-carousel swiper-container">
             <div class="swiper-wrapper">
-                <swiper
-                :slides-per-view="4"
-                :space-between="0"
-                @swiper="onSwiper"
-                @slideChange="onSlideChange"
-              >
-              <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -157,9 +150,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -295,9 +286,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -433,9 +422,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -571,9 +558,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -709,9 +694,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -847,9 +830,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -985,9 +966,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1123,9 +1102,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1261,9 +1238,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1399,9 +1374,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1537,9 +1510,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1675,9 +1646,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1813,9 +1782,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1951,9 +1918,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2089,9 +2054,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2227,9 +2190,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2365,9 +2326,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2503,9 +2462,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2641,9 +2598,7 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2779,8 +2734,6 @@
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                </swiper>
             </div>
         </div>
 
@@ -2793,53 +2746,8 @@
     </div>
 </template>
 <script>
-// export default {
-//     name: 'MainBanner',
-// }
-
-
-import {  Pagination, A11y } from 'swiper';
-import SwiperCore, { Navigation } from "swiper";
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
-
-  // Import Swiper styles
-  import 'swiper/css';
-  import 'swiper/css/navigation';
-  import 'swiper/css/pagination';
- 
-  
-  SwiperCore.use([Navigation]);
-  export default {
+export default {
     name: 'TopDeals',
-   
-    components: {
-      Swiper,
-      SwiperSlide,
-      
-    },
-    setup() {
-      const onSwiper = (swiper) => {
-        console.log(swiper);
-      };
-      const swiper = useSwiper();
-      const onSlideChange = () => {
-        console.log('slide change');
-      };
-      return {
-        onSwiper,
-        onSlideChange,
-        swiper,
-        modules: [ Pagination, A11y],
-        swiperOptions: {
-                    loop: true,
-                    
-                    centeredSlides: true,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    }
-                }
-      };
-    },
-  };
+}
+
 </script>

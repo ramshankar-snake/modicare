@@ -14,7 +14,7 @@ $.fancybox.defaults.btnTpl.close = '<button data-fancybox-close class="fancybox-
 $.fancybox.defaults.btnTpl.share = '<button data-fancybox-share class="fancybox-button fancybox-button--share" title="{{SHARE}}"><img src="./assets/images/icons/icon-share-white.svg" alt="{{SHARE}}" /></button>';
 var isAnimating = false;
 
-$(document).ready(function() {
+$(function(){
 
     $(document).on('click', '.toggle-shopping-bag-notification', function() {
         shoppingBagNotification();
@@ -259,13 +259,20 @@ $(document).ready(function() {
         $("body").removeClass("side-menu-open");
         toggleSideMenu();
     });
-    $(".toggle-side-menu").click(function() {
+
+    
+
+
+    $(document).on('click' , '.toggle-side-menu' , function() {
         $("body").removeClass("side-menu-open");
         toggleSideMenu();
     });
-    $(".side-menu-overlay, .btn-side-menu-close").click(function() {
+
+    $(document).on('click' , '.side-menu-overlay, .btn-side-menu-close' , function() {
         toggleSideMenu();
     });
+    
+    
 
     $(document).on('click', '.toggle-nav-search', function() {
         toggleNavSearch();
@@ -763,5 +770,6 @@ function fixCarouselNavPositioning(swiper) {
     var swiperSlideActive = carousel.find('.swiper-slide-active');
     var swiperSlideActiveImage = swiperSlideActive.find('img');
     var swiperSlidePrevNext = carousel.find('.swiper-button-next, .swiper-button-prev');
-    swiperSlidePrevNext.css("top", swiperSlideActiveImage[0].clientHeight / 2);
+    // swiperSlidePrevNext.css("top", swiperSlideActiveImage[0].clientHeight / 2);
+    // swiperSlidePrevNext.css("top", 282);
 }

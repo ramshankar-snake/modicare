@@ -11,9 +11,8 @@ import './assets/css/daterangepicker.css'
 // import './assets/css/jquery.fancybox.css'
 import './assets/css/jquery.fancybox.min.css'
 import './assets/css/swiper-bundle.min.css'
-// import { store } from './store'
 
-
+import './assets/js/careers.js'
 
 <>
 <component is="script" src="./assets/js/jquery.js" ></component>

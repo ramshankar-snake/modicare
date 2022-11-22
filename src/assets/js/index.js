@@ -107,5 +107,5 @@ function fixGalleryNavPositioning() {
     var swiperSlideActive = $('.products-showcase-gallery .swiper-slide-active');
     var swiperSlideActiveImage = swiperSlideActive.find('img');
     var swiperSlidePrevNext = $('.products-showcase-gallery .swiper-button-next, .products-showcase-gallery .swiper-button-prev');
-    swiperSlidePrevNext.css("top", swiperSlideActiveImage[0].clientHeight / 2);
+    // swiperSlidePrevNext.css("top", swiperSlideActiveImage[0].clientHeight / 2);
 }

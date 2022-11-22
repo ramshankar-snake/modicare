@@ -3,6 +3,7 @@
  
   <SideMenu></SideMenu>
     
+ <div class="mobile-menu">
     <div class="mobile-menu">
         <div class="mobile-menu-container">
             <div class="mobile-menu-content">
@@ -124,6 +125,7 @@
             </div>
         </div>
     </div>
+    </div>
     
     <main class="main-container">
         <div class="sticky-social-buttons">
@@ -155,17 +157,7 @@
             <section class="awards">
                 <div class="awards-carousel swiper-container">
                     <div class="swiper-wrapper">
-                        <swiper
-              :modules="modules"
-              :slides-per-view="3"
-              :space-between="0"
-              navigation
-              :pagination="{ clickable: true }"
-              @swiper="onSwiper"
-              @slideChange="onSlideChange"
-            >
-                        <swiper-slide>
-                        <div class=" awards-carousel-slide">
+                        <div class="swiper-slide awards-carousel-slide">
                             <div class="awards-carousel-item">
                                 <div class="d-inline-block text-center">
                                     <img src="@/assets/images/awards-2.jpg" alt="" />
@@ -175,9 +167,7 @@
                                 </div>
                             </div>
                         </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="awards-carousel-slide">
+                        <div class="swiper-slide awards-carousel-slide">
                             <div class="awards-carousel-item">
                                 <div class="d-inline-block text-center">
                                     <img src="@/assets/images/awards-1.jpg" alt="" />
@@ -187,35 +177,27 @@
                                 </div>
                             </div>
                         </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                        <div class="awards-carousel-slide">
+                        <div class="swiper-slide awards-carousel-slide">
                             <div class="awards-carousel-item">
                                 <div class="d-inline-block text-center">
                                     <img src="@/assets/images/awards-3.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                        <div class="awards-carousel-slide">
+                        <div class="swiper-slide awards-carousel-slide">
                             <div class="awards-carousel-item">
                                 <div class="d-inline-block text-center">
                                     <img src="@/assets/images/awards-4.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                        <div class="awards-carousel-slide">
+                        <div class="swiper-slide awards-carousel-slide">
                             <div class="awards-carousel-item">
                                 <div class="d-inline-block text-center">
                                     <img src="@/assets/images/awards-5.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
-                        </swiper-slide>
-                    </swiper>
                     </div>
                 </div>
                 <div class="swiper-button-prev">
@@ -296,16 +278,7 @@
             <section class="article-section">
                 <div class="careers-carousel careers-carousel-1 swiper-container">
                     <div class="swiper-wrapper">
-                        <swiper
-                        :modules="modules"
-                        :slides-per-view="1"
-                        :space-between="0"
-                       
-                        @swiper="onSwiper"
-                        @slideChange="onSlideChange"
-                      >
-                      <swiper-slide>
-                        <div class="">
+                        <div class="swiper-slide">
                             <div class="swiper-slide-inner">
                                 <h1 class="mb-4">From the COO's desk</h1>
     
@@ -321,10 +294,8 @@
                                 </div>
                             </div>
                         </div>
-                    </swiper-slide>
     
-                        <swiper-slide>
-                        <div class="">
+                        <div class="swiper-slide">
                             <div class="swiper-slide-inner">
                                 <h1 class="mb-4">A word from the HR head</h1>
     
@@ -340,8 +311,6 @@
                                 </div>
                             </div>
                         </div>
-                    </swiper-slide>
-                    </swiper>
                     </div>
                     <div class="swiper-button-prev">
                         <img src="@/assets/images/btn-arrow-left.svg" alt="Previous" />
@@ -357,15 +326,7 @@
     
                 <div class="careers-carousel careers-carousel-2 swiper-container">
                     <div class="swiper-wrapper">
-                        <swiper
-                        :modules="modules"
-                        :slides-per-view="1"
-                        :space-between="0"
-                        @swiper="onSwiper"
-                        @slideChange="onSlideChange"
-                      >
-                      <swiper-slide>
-                        <div class="">
+                        <div class="swiper-slide">
                             <div class="swiper-slide-inner">
                                 <div class="careers-carousel-slide-image-container">
                                     <a href="@/assets/videos/sample-1080p.mp4" class="careers-carousel-image-inner careers-carousel-image-inner__video" data-fancybox>
@@ -388,9 +349,8 @@
                                 </div>
                             </div>
                         </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                        <div class="">
+    
+                        <div class="swiper-slide">
                             <div class="swiper-slide-inner">
                                 <div class="careers-carousel-slide-image-container">
                                     <a href="@/assets/videos/sample-1080p.mp4" class="careers-carousel-image-inner careers-carousel-image-inner__video" data-fancybox>
@@ -413,9 +373,8 @@
                                 </div>
                             </div>
                         </div>
-                    </swiper-slide>
-                        <swiper-slide>
-                        <div class="">
+    
+                        <div class="swiper-slide">
                             <div class="swiper-slide-inner">
                                 <div class="careers-carousel-slide-image-container">
                                     <a href="@/assets/videos/sample-1080p.mp4" class="careers-carousel-image-inner careers-carousel-image-inner__video" data-fancybox>
@@ -438,9 +397,8 @@
                                 </div>
                             </div>
                         </div>
-                    </swiper-slide>
-                        <swiper-slide>
-                        <div class="">
+    
+                        <div class="swiper-slide">
                             <div class="swiper-slide-inner">
                                 <div class="careers-carousel-slide-image-container">
                                     <a href="@/assets/videos/sample-1080p.mp4" class="careers-carousel-image-inner careers-carousel-image-inner__video" data-fancybox>
@@ -463,8 +421,6 @@
                                 </div>
                             </div>
                         </div>
-                    </swiper-slide>
-                </swiper>
                     </div>
                     <div class="swiper-button-prev">
                         <img src="@/assets/images/btn-arrow-left.svg" alt="Previous" />
@@ -481,16 +437,7 @@
                 <div class="careers-gallery-outer">
                     <div class="careers-gallery swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-wrapper">
-                                <swiper
-                                :modules="modules"
-                                :slides-per-view="3"
-                                :space-between="15"
-                                @swiper="onSwiper"
-                                @slideChange="onSlideChange"
-                              >
-                              <swiper-slide>
-                            <div class="">
+                            <div class="swiper-slide">
                                 <div class="careers-gallery-slide-inner">
                                     <div class="careers-gallery-slide-image-container">
                                         <img src="@/assets/images/careers/careers-gallery-1.png" class="careers-gallery-slide-image" alt="" />
@@ -501,9 +448,7 @@
                                     </div>
                                 </div>
                             </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                            <div class="">
+                            <div class="swiper-slide">
                                 <div class="careers-gallery-slide-inner">
                                     <div class="careers-gallery-slide-image-container">
                                         <img src="@/assets/images/careers/careers-gallery-3.png" class="careers-gallery-slide-image" alt="" />
@@ -514,9 +459,7 @@
                                     </div>
                                 </div>
                             </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                            <div class="">
+                            <div class="swiper-slide">
                                 <div class="careers-gallery-slide-inner">
                                     <div class="careers-gallery-slide-image-container">
                                         <img src="@/assets/images/careers/careers-gallery-5.png" class="careers-gallery-slide-image" alt="" />
@@ -527,9 +470,7 @@
                                     </div>
                                 </div>
                             </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                            <div class="">
+                            <div class="swiper-slide">
                                 <div class="careers-gallery-slide-inner">
                                     <div class="careers-gallery-slide-image-container">
                                         <img src="@/assets/images/careers/careers-gallery-7.png" class="careers-gallery-slide-image" alt="" />
@@ -540,12 +481,8 @@
                                     </div>
                                 </div>
                             </div>
-                            </swiper-slide>
-
-                        </swiper>
                         </div>
                     </div>
-                </div>
                     <div class="swiper-button-prev careers-gallery-prev">
                         <img src="@/assets/images/btn-arrow-left.svg" alt="Previous" />
                     </div>
@@ -949,72 +886,25 @@
                 </div>
             </section>
         </div>
-    </main>
-  </template>
-  
-  <script>
-   
-    import SideMenu from '../components/SideMenu.vue';
-  import {  Pagination, A11y } from 'swiper';
-  import SwiperCore, { Navigation } from "swiper";
-  import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
-  
-    // Import Swiper styles
-    import 'swiper/css';
-    import 'swiper/css/navigation';
-    import 'swiper/css/pagination';
-   
-    
-    SwiperCore.use([Navigation]);
+    </main>  
+</template>
+<script>
+import SideMenu from '../components/SideMenu.vue';
     export default {
-     name: 'CareerPage',
-     
+     name: 'CareerPage',  
       components: {
-        Swiper,
-        SwiperSlide,
         SideMenu,
       },
-      setup() {
-        const onSwiper = (swiper) => {
-          console.log(swiper);
-        };
-        const swiper = useSwiper();
-        const onSlideChange = () => {
-          console.log('slide change');
-        };
-        return {
-          onSwiper,
-          onSlideChange,
-          swiper,
-          modules: [ Pagination, A11y],
-          swiperOptions: {
-                      loop: true,
-                      centeredSlides: true,
-                      navigation: {
-                          nextEl: '.swiper-button-next',
-                          prevEl: '.swiper-button-prev'
-                      }
-                  }
-        };
-      },
+      mounted() {
+    const recaptchaScript = document.createElement("script");
+    recaptchaScript.setAttribute(
+      "src",
+      "../assets/js/careers.js"
+    );
+    recaptchaScript.setAttribute(
+      "defer"
+    );
+    document.head.appendChild(recaptchaScript);
+  },
     };
-  </script>
-  
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style scoped>
-  h3 {
-    margin: 40px 0 0;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  a {
-    color: #42b983;
-  }
-  </style>
-  
+</script>

@@ -8,24 +8,14 @@
         </div>
 
         <div class="products-showcase-links mt-4">
-            <router-link to="product-listing" class="icon-after icon-chevronright">More</router-link>
+            <a href="product-listing.html" class="icon-after icon-chevronright">More</a>
         </div>
     </div>
 
-    
-
     <div id="just-in-products-carousel" class="product-listing-carousel-container modi-container">
-               
         <div class="product-listing-carousel swiper-container">
             <div class="swiper-wrapper">
-                <swiper
-                :slides-per-view="4"
-                :space-between="0"
-                @swiper="onSwiper"
-                @slideChange="onSlideChange"
-              >
-              <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -156,14 +146,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -294,14 +282,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -432,14 +418,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -570,14 +554,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -708,14 +690,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -846,14 +826,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -984,14 +962,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1122,14 +1098,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1260,14 +1234,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1398,14 +1370,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1536,14 +1506,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1674,14 +1642,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1812,14 +1778,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -1950,14 +1914,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2088,14 +2050,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2226,14 +2186,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2364,14 +2322,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2502,14 +2458,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2640,14 +2594,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                    <swiper-slide>
-                    <div class=" product-listing-carousel-slide">
+                    <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2778,15 +2730,14 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-quick-select-or-change-address-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </swiper-slide>
-                </swiper>
             </div>
         </div>
+
         <div class="swiper-button-prev">
             <img src="@/assets/images/home/carousel-arrow-left-white-primary-bg.svg" alt="Previous" />
         </div>
@@ -2796,53 +2747,7 @@
     </div>
     </template>
     <script>
-// export default {
-//     name: 'MainBanner',
-// }
-
-
-import {  Pagination, A11y } from 'swiper';
-import SwiperCore, { Navigation } from "swiper";
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
-
-  // Import Swiper styles
-  import 'swiper/css';
-  import 'swiper/css/navigation';
-  import 'swiper/css/pagination';
- 
-  
-  SwiperCore.use([Navigation]);
-  export default {
+export default {
     name: 'JustIn',
-   
-    components: {
-      Swiper,
-      SwiperSlide,
-      
-    },
-    setup() {
-      const onSwiper = (swiper) => {
-        console.log(swiper);
-      };
-      const swiper = useSwiper();
-      const onSlideChange = () => {
-        console.log('slide change');
-      };
-      return {
-        onSwiper,
-        onSlideChange,
-        swiper,
-        modules: [ Pagination, A11y],
-        swiperOptions: {
-                    loop: true,
-                    
-                    centeredSlides: true,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    }
-                }
-      };
-    },
-  };
+}
 </script>

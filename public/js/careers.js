@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
     var careersCarousel1 = new Swiper('.careers-carousel-1', {
         loop: true,
         navigation: {

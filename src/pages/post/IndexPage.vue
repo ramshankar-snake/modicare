@@ -50,23 +50,12 @@
   
   
   
-  import {  Pagination, A11y } from 'swiper';
-  import SwiperCore, { Navigation } from "swiper";
-  import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
-  
-    // Import Swiper styles
-    import 'swiper/css';
-    import 'swiper/css/navigation';
-    import 'swiper/css/pagination';
-   
-    
-    SwiperCore.use([Navigation]);
+ 
     export default {
       name: 'HelloWorld',
      
       components: {
-        Swiper,
-        SwiperSlide,
+       
        
         'SideMenu'   : SideMenu,
         'MainBanner' : MainBanner,
@@ -77,35 +66,7 @@
         'GuranTee'   : GuranTee,
         'HomeContact': HomeContact,
       },
-      setup() {
-        const onSwiper = (swiper) => {
-          console.log(swiper);
-        };
-        const swiper = useSwiper();
-        const onSlideChange = () => {
-          console.log('slide change');
-        };
-        return {
-          onSwiper,
-          onSlideChange,
-          swiper,
-          modules: [ Pagination, A11y],
-          swiperOptions: {
-                      loop: true,
-                      
-                      centeredSlides: true,
-                      // slidesOffsetBefore: '100px',
-                      // slidesOffsetAfter: '100px',
-                      // slidesPerView: 'auto',
-                      // touchRatio: 0.2,
-                      // slideToClickedSlide: true,
-                      navigation: {
-                          nextEl: '.swiper-button-next',
-                          prevEl: '.swiper-button-prev'
-                      }
-                  }
-        };
-      },
+     
     };
   </script>
   

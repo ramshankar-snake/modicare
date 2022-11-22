@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(function(){
+    
     var heroBannerCarousel = new Swiper('.hero-banner-carousel-container', {
         slidesPerView: 1,
         loop: true,
@@ -45,8 +46,8 @@ $(document).ready(function() {
         spaceBetween: 10,
         loop: true,
         navigation: {
-            nextEl: '#most-loved-products-carousel .swiper-button-next',
-            prevEl: '#most-loved-products-carousel .swiper-button-prev',
+            nextEl: '#just-in-products-carousel .swiper-button-next',
+            prevEl: '#just-in-products-carousel .swiper-button-prev',
         },
         breakpoints: {
             768: {
@@ -63,8 +64,8 @@ $(document).ready(function() {
         spaceBetween: 10,
         loop: true,
         navigation: {
-            nextEl: '#most-loved-products-carousel .swiper-button-next',
-            prevEl: '#most-loved-products-carousel .swiper-button-prev',
+            nextEl: '#top-deals-products-carousel .swiper-button-next',
+            prevEl: '#top-deals-products-carousel .swiper-button-prev',
         },
         breakpoints: {
             768: {
@@ -107,5 +108,5 @@ function fixGalleryNavPositioning() {
     var swiperSlideActive = $('.products-showcase-gallery .swiper-slide-active');
     var swiperSlideActiveImage = swiperSlideActive.find('img');
     var swiperSlidePrevNext = $('.products-showcase-gallery .swiper-button-next, .products-showcase-gallery .swiper-button-prev');
-    swiperSlidePrevNext.css("top", swiperSlideActiveImage[0].clientHeight / 2);
+    // swiperSlidePrevNext.css("top", swiperSlideActiveImage[0].clientHeight / 2);
 }
