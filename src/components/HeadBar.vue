@@ -2698,10 +2698,10 @@
                                 <div class="nav-dropdown-list">
                                     <div class="nav-dropdown-title">Hey!</div>
                                     <div class="nav-dropdown-item">
-                                        <a href="@/sign-in.html" class="nav-dropdown-item-link nav-dropdown-item-link-primary">Sign In</a>
+                                        <router-link to="/sign-in" class="nav-dropdown-item-link nav-dropdown-item-link-primary">Sign In</router-link>
                                     </div>
                                     <div class="nav-dropdown-item">
-                                        <a href="@/register-registration-type.html" class="nav-dropdown-item-link nav-dropdown-item-link-primary">Register</a>
+                                        <router-link to="/register-registration-type" class="nav-dropdown-item-link nav-dropdown-item-link-primary">Register</router-link>
                                     </div>
                                     <div class="nav-dropdown-item-separator"></div>
                                     <div class="nav-dropdown-item">

@@ -12,7 +12,7 @@
             <div class="products-showcase-gallery swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-wellness.webp" type="image/webp">
@@ -22,10 +22,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Wellness</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-personal-care.webp" type="image/webp">
@@ -35,11 +35,11 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Personal Care</div>
-                        </a>
+                        </router-link>
                     </div>
     
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-home-care.webp" type="image/webp">
@@ -49,10 +49,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Home Care</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-laundry-care.webp" type="image/webp">
@@ -62,10 +62,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Laundry Care</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-tech.webp" type="image/webp">
@@ -75,10 +75,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Tech</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-f-and-b.webp" type="image/webp">
@@ -88,10 +88,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">F&B</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-watches.webp" type="image/webp">
@@ -101,10 +101,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Watches</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-jewellery.webp" type="image/webp">
@@ -114,10 +114,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Jewellery</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-agriculture.webp" type="image/webp">
@@ -127,10 +127,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Agriculture</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-skin-care.webp" type="image/webp">
@@ -140,10 +140,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Skin Care</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-vaping.webp" type="image/webp">
@@ -153,10 +153,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Vaping</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-cbd.webp" type="image/webp">
@@ -166,10 +166,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">CBD</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-color.webp" type="image/webp">
@@ -179,10 +179,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Color</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-auto.webp" type="image/webp">
@@ -192,10 +192,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Auto</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-uniform.webp" type="image/webp">
@@ -205,10 +205,10 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Uniform</div>
-                        </a>
+                        </router-link>
                     </div>
                     <div class="swiper-slide products-showcase-gallery-item">
-                        <a href="./product-listing.html" class="products-showcase-gallery-item-link">
+                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
                                     <source srcset="@/assets/images/gallery-literature.webp" type="image/webp">
@@ -218,7 +218,7 @@
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
                             <div class="products-showcase-gallery-item-text">Literature</div>
-                        </a>
+                        </router-link>
                     </div>
                 </div>
     

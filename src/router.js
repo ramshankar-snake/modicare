@@ -27,6 +27,7 @@ import TermsConditions from './pages/TermsConditions.vue'
 import ForgotPassword from './pages/ForgotPassword.vue'
 import ForgotPasswordConfirmation from './pages/ForgotPasswordConfirmation.vue'
 import ProductListing from './pages/ProductListing.vue'
+import ProductDetails from './pages/ProductDetails.vue'
 import DisclaimerPage from './pages/DisclaimerPage.vue'
 import PrivacyPolicy from './pages/PrivacyPolicy.vue'
 import PoliciesCompliance from './pages/PoliciesCompliance.vue'
@@ -189,6 +190,12 @@ const routes = [
         component: ProductListing,
          meta: { layout: 'PreLayout' },
         path: '/product-listing'
+    },
+    {
+        name: 'ProductDetails',
+        component: ProductDetails,
+         meta: { layout: 'PreLayout' },
+        path: '/product-details'
     },
     {
         name: 'DisclaimerPage',

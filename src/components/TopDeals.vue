@@ -7,7 +7,7 @@
         </div>
 
         <div class="products-showcase-links mt-4">
-            <a href="product-listing.html" class="icon-after icon-chevronright">More</a>
+            <router-link to="/product-listing" class="icon-after icon-chevronright">More</router-link>
         </div>
     </div>
 
@@ -18,11 +18,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-lips-1.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -154,11 +154,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-lips-2.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -290,11 +290,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-lips-3.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -426,11 +426,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-lips-4.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -562,11 +562,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-lips-5.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -698,11 +698,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-lips-6.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -834,11 +834,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-nails-1.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -970,11 +970,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-nails-2.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -1106,11 +1106,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-nails-3.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -1242,11 +1242,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-nails-4.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -1378,11 +1378,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-nails-5.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -1514,11 +1514,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-face-1.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -1650,11 +1650,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-face-2.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -1786,11 +1786,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-face-3.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -1922,11 +1922,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-face-4.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -2058,11 +2058,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-face-5.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -2194,11 +2194,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-face-6.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -2330,11 +2330,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-face-7.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -2466,11 +2466,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-lips-1.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>
@@ -2602,11 +2602,11 @@
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
-                                    <a href="./product-details.html" class="listing-item-image-container">
+                                    <router-link to="/product-details" class="listing-item-image-container">
                                         <img class="listing-item-image" src="@/assets/images/products/products-lips-2.png" />
-                                    </a>
+                                    </router-link>
                                     <div class="listing-item-description-container">
-                                        <a href="./product-details.html" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</a>
+                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
                                             <div class="listing-item-size">30ml</div>

@@ -32,4 +32,13 @@
     "price": 430,
     "category": "L"
   }
+  ,
+  {
+    "id": "5",
+    "image": "products-lips-1.png",
+    "title": "Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C",
+    "size": "30ml",
+    "price": 430,
+    "category": "L"
+  }
 ]
