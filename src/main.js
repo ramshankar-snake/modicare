@@ -14,6 +14,8 @@ import './assets/css/swiper-bundle.min.css'
 
 import './assets/js/careers.js'
 
+
+
 <>
 <component is="script" src="./assets/js/jquery.js" ></component>
 <component is="script" src="./assets/js/index.js" ></component>

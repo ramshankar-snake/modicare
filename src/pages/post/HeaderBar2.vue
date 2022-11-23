@@ -4,7 +4,7 @@
           <div class="modi-container nav-container">
               <div class="nav-links">
                   <div class="nav-links-desktop">
-                      <router-link to='/Career'  class="nav-link logo-link" href="@/index.html">
+                      <router-link to='/post/index'  class="nav-link logo-link">
                           <img src="@/assets/images/logo.svg" class="logo" alt="Modicare" />
                       </router-link>
                       <a class="nav-link toggle-side-menu" href="javascript:;">
@@ -1359,35 +1359,35 @@
                           <div class="nav-search-results-heading">Go to</div>
   
                           <div class="nav-search-results-item">
-                              <a href="@/consultant-locator.html">Find Consultant</a>
+                              <router-link to="/consultant-locator">Find Consultant</router-link>
                           </div>
   
                           <div class="nav-search-results-item">
-                              <a href="@/store-locator.html">Store Locator</a>
+                              <router-link to="/store-locator">Store Locator</router-link>
                           </div>
   
                           <div class="nav-search-results-item">
-                              <a href="@/the-visionary.html">The Vision</a>
+                              <router-link to="/the-visionary">The Vision</router-link>
                           </div>
   
                           <div class="nav-search-results-item">
-                              <a href="@/event.html">Events & Programs</a>
+                              <router-link to="/event">Events & Programs</router-link>
                           </div>
   
                           <div class="nav-search-results-item">
-                              <a href="@/event-gallery.html">Event Gallery</a>
+                              <router-link to="/event-gallery">Event Gallery</router-link>
                           </div>
   
                           <div class="nav-search-results-item">
-                              <a href="@/achievers.html">Success Stories</a>
+                              <router-link to="/achievers">Success Stories</router-link>
                           </div>
   
                           <div class="nav-search-results-item">
-                              <a href="https://azadi.modicare.com" target="_blank">Business Opportunity</a>
+                              <router-link to="https://azadi.modicare.com" target="_blank">Business Opportunity</router-link>
                           </div>
   
                           <div class="nav-search-results-item">
-                              <a href="@/quick-pay.html">Credit M-Wallet</a>
+                              <router-link to="/quick-pay">Credit M-Wallet</router-link>
                           </div>
                       </div>
                   </div>
@@ -1399,9 +1399,9 @@
                           <a class="nav-link btn-mobile-menu-close" href="javascript:;">
                               <img src="@/assets/images/icons/icon-close-secondary.svg" alt="Close Menu" class="btn-mobile-menu-icon" />
                           </a>
-                          <a class="nav-link logo-link" href="@/index.html">
+                          <router-link class="nav-link logo-link" to="post/index">
                               <img src="@/assets/images/logo.png" class="logo" alt="Modicare" />
-                          </a>
+                          </router-link>
                       </div>
                       <div class="nav-links-mobile-right">
                           <div class="shopping-bag-dropdown-container nav-dropdown-container">

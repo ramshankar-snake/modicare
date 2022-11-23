@@ -1359,35 +1359,35 @@
                         <div class="nav-search-results-heading">Go to</div>
 
                         <div class="nav-search-results-item">
-                            <a href="@/consultant-locator.html">Find Consultant</a>
+                            <router-link to="/consultant-locator">Find Consultant</router-link>
                         </div>
 
                         <div class="nav-search-results-item">
-                            <a href="@/store-locator.html">Store Locator</a>
+                            <router-link to="/store-locator">Store Locator</router-link>
                         </div>
 
                         <div class="nav-search-results-item">
-                            <a href="@/the-visionary.html">The Vision</a>
+                            <router-link to="/the-visionary">The Vision</router-link>
                         </div>
 
                         <div class="nav-search-results-item">
-                            <a href="@/event.html">Events & Programs</a>
+                            <router-link to="/event">Events & Programs</router-link>
                         </div>
 
                         <div class="nav-search-results-item">
-                            <a href="@/event-gallery.html">Event Gallery</a>
+                            <router-link to="/event-gallery">Event Gallery</router-link>
                         </div>
 
                         <div class="nav-search-results-item">
-                            <a href="@/achievers.html">Success Stories</a>
+                            <router-link to="/achievers">Success Stories</router-link>
                         </div>
 
                         <div class="nav-search-results-item">
-                            <a href="https://azadi.modicare.com" target="_blank">Business Opportunity</a>
+                            <router-link to="ttps://azadi.modicare.com" target="_blank">Business Opportunity</router-link>
                         </div>
 
                         <div class="nav-search-results-item">
-                            <a href="@/quick-pay.html">Credit M-Wallet</a>
+                            <router-link to="/quick-pay">Credit M-Wallet</router-link>
                         </div>
                     </div>
                 </div>
