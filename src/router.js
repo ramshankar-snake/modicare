@@ -33,6 +33,7 @@ import DisclaimerPage from './pages/DisclaimerPage.vue'
 import PrivacyPolicy from './pages/PrivacyPolicy.vue'
 import PoliciesCompliance from './pages/PoliciesCompliance.vue'
 import ConsultantLocator from './pages/ConsultantLocator.vue'
+import CataloguePage from './pages/CataloguePage.vue'
 
 
 import IndexPage from './pages/post/IndexPage.vue'
@@ -227,6 +228,12 @@ const routes = [
         component: ConsultantLocator,
          meta: { layout: 'PreLayout' },
         path: '/consultant-locator'
+    },
+    {
+        name: 'CataloguePage',
+        component: CataloguePage,
+         meta: { layout: 'PreLayout' },
+        path: '/catalogues'
     },
 
     {

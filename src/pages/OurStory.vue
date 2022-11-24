@@ -189,8 +189,9 @@
     </div>
 </main>
 </template>
-import SideMenu from ''../components/SideMenu.vue';
+
 <script>
+import SideMenu from '../components/SideMenu.vue';
 export default {
     name: 'OurStory',
     components: {

@@ -11,7 +11,7 @@
 
                 <div class="side-menu-title">All Products</div>
                 <div class="side-menu-title-link">
-                    <a href="catalogues.html" class="icon-after icon-chevronright">View Catalogues</a>
+                    <router-link to="catalogues" class="icon-after icon-chevronright">View Catalogues</router-link>
                 </div>
 
                 <ul class="side-menu-nav-list">
@@ -128,7 +128,7 @@
                         </ul>
 
                         <div class="mobile-menu-sub-menu-links">
-                            <a href="catalogues.html" class="icon-after icon-chevronright mobile-menu-sub-menu-link">View Catalogues</a>
+                            <router-link to="/catalogues" class="icon-after icon-chevronright mobile-menu-sub-menu-link">View Catalogues</router-link>
                         </div>
 
                         <div class="mobile-menu-sub-menu-locate-links">
