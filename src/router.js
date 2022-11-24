@@ -9,6 +9,7 @@ import OurStory from './pages/OurStory.vue'
 import TheVisionary from './pages/TheVisionary.vue'
 import SuccessStories from './pages/SuccessStories.vue'
 import EventsPage from './pages/EventsPage.vue'
+import EventGallery from './pages/EventGallery.vue'
 import ContactUs from './pages/ContactUs.vue'
 import SignIn from './pages/SignIn.vue'
 import RegisterType from './pages/RegisterType.vue'
@@ -88,6 +89,12 @@ const routes = [
         component: EventsPage,
          meta: { layout: 'PreLayout' },
         path: '/events'
+    },
+    {
+        name: 'EventGallery',
+        component: EventGallery,
+         meta: { layout: 'PreLayout' },
+        path: '/event-gallery'
     },
     {
         name: 'ContactUs',

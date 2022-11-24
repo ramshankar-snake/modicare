@@ -1,126 +1,5 @@
 <template>
     <SideMenu></SideMenu>
-    <div class="mobile-menu">
-        <div class="mobile-menu-container">
-            <div class="mobile-menu-content">
-                <div class="mobile-menu-main">
-                    <div id="mobile-menu-search-form">
-                        <div class="mobile-menu-search-input-container">
-                            <input type="text" id="mobile-menu-search-input" class="mobile-menu-search-input" name="mobile-search" placeholder="Search modicare.com" />
-                            <img src="@/assets/images/icons/icon-search-dark.svg" class="mobile-menu-search-btn" alt="Search modicare.com" />
-                        </div>
-                    </div>
-    
-                    <div class="mobile-menu-main-menu">
-                        <ul class="mobile-menu-nav-list">
-                            <li class="mobile-menu-nav-list-item"><a href="javascript:;" class="toggle-mobile-menu-sub-menu icon-after icon-chevronright" data-target="mobile-menu-products-menu">Shop</a></li>
-                            <li class="mobile-menu-nav-list-item"><a href="./index.html">Home</a></li>
-                            <li class="mobile-menu-nav-list-item"><a href="javascript:;" class="toggle-mobile-menu-sub-menu icon-after icon-chevronright" data-target="mobile-menu-about-menu">About</a></li>
-                            <li class="mobile-menu-nav-list-item"><a href="./careers.html">Offers</a></li>
-                            <li class="mobile-menu-nav-list-item"><a href="./business-opportunity.html">Business Opportunity</a></li>
-                        </ul>
-    
-                        <div class="mobile-menu-social-links">
-                            <a href="javascript:;" class="mobile-menu-social-link waves-effect"><img src="@/assets/images/btn-facebook.png" alt="Modicare Facebook" /></a>
-                            <a href="javascript:;" class="mobile-menu-social-link waves-effect"><img src="@/assets/images/btn-instagram.png" alt="Modicare Instagram" /></a>
-                            <a href="javascript:;" class="mobile-menu-social-link waves-effect"><img src="@/assets/images/btn-linkedin.png" alt="Modicare Linkedin" /></a>
-                            <a href="javascript:;" class="mobile-menu-social-link waves-effect"><img src="@/assets/images/btn-youtube.png" alt="Modicare YouTube" /></a>
-                        </div>
-                    </div>
-    
-                    <div class="mobile-menu-search">
-                        <div class="mobile-menu-search-go-to">
-                            <div class="mobile-menu-search-go-to-heading">Go to</div>
-    
-                            <div class="mobile-menu-search-go-to-item">
-                                <a href="./the-visionary.html">The Vision</a>
-                            </div>
-    
-                            <div class="mobile-menu-search-go-to-item">
-                                <a href="./event.html">Events & Programs</a>
-                            </div>
-    
-                            <div class="mobile-menu-search-go-to-item">
-                                <a href="./event-gallery.html">Event Gallery</a>
-                            </div>
-    
-                            <div class="mobile-menu-search-go-to-item">
-                                <a href="javascript:;">Success Stories</a>
-                            </div>
-    
-                            <div class="mobile-menu-search-go-to-item">
-                                <a href="./business-opportunity.html">Business Opportunity</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="mobile-menu-sub-menu-container">
-                    <div class="mobile-menu-sub-menu" id="mobile-menu-products-menu">
-                        <div class="mobile-menu-sub-menu-title-section">
-                            <div class="mobile-menu-sub-menu-title-link">
-                                <a href="javascript:;" class="toggle-mobile-menu-sub-menu icon-before icon-chevronleft">Back</a>
-                            </div>
-                        </div>
-    
-                        <div class="mobile-menu-sub-menu-content-section">
-                            <ul class="mobile-menu-sub-menu-nav-list">
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./product-listing.html">Wellness</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./product-listing.html">Skin Care</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./product-listing.html">Color</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./product-listing.html">Home Care</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./product-listing.html">F&B</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./product-listing.html">Watches</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./product-listing.html">Tech</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./product-listing.html">Jewelry</a></li>
-                            </ul>
-    
-                            <div class="mobile-menu-sub-menu-links">
-                                <a href="javascript:;" class="icon-after icon-chevronright mobile-menu-sub-menu-link">View Catalogues</a>
-                            </div>
-    
-                            <div class="mobile-menu-sub-menu-locate-links">
-                                <a href="javascript:;" class="locate-link waves-effect">
-                                    <div class="locate-link-icon-container">
-                                        <img src="@/assets/images/icons/icon-locate-store.svg" class="locate-link-icon" alt="Locate Consultant" />
-                                    </div>
-                                    <div class="locate-link-text">
-                                        Locate<br />Store
-                                    </div>
-                                </a>
-                                <a href="javascript:;" class="locate-link waves-effect">
-                                    <div class="locate-link-icon-container">
-                                        <img src="@/assets/images/icons/icon-locate-consultant.svg" class="locate-link-icon" alt="Locate Consultant" />
-                                    </div>
-                                    <div class="locate-link-text">
-                                        Locate<br />Consultant
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mobile-menu-sub-menu" id="mobile-menu-about-menu">
-                        <div class="mobile-menu-sub-menu-title-section">
-                            <div class="mobile-menu-sub-menu-title-link">
-                                <a href="javascript:;" class="toggle-mobile-menu-sub-menu icon-before icon-chevronleft">Back</a>
-                            </div>
-                        </div>
-    
-                        <div class="mobile-menu-sub-menu-content-section">
-                            <ul class="mobile-menu-sub-menu-nav-list">
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./our-story.html">Our Story</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./the-visionary.html">The Visionary</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-separator"></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./achievers.html">Success Stories</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./event.html">Events</a></li>
-                                <li class="mobile-menu-sub-menu-nav-list-item"><a href="./careers.html">Careers</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
     <main class="main-container">
         <div class="locator-container modi-container" style="padding: 90px 0;margin-top: 30px;">
@@ -195,11 +74,90 @@
 </template>
 <script>
  import SideMenu from '../components/SideMenu.vue';
+ import $ from 'jquery';
 export default {
    
     name: 'ConsultantLocator',
     components: {
          SideMenu,
       },
+      mounted(){
+        var presets = {
+    "area" : {
+        "placeholder": "Search by state, city, zone or pin code",
+        "placeholderMobile": "Search by area",
+        "searchby_text": "Search by consultant info"
+    },
+    "info" : {
+        "placeholder": "Search by consultant name, MCA number or phone",
+        "placeholderMobile": "Search by MCA or phone",
+        "searchby_text": "Search by area"
+    }
+};
+
+$(function() {
+    updateSearchByText();
+    $('.locator-search').css('visibility', 'visible');
+
+    $(window).resize(function() {
+        updateSearchByText();
+    });
+
+    $(document).on('keyup', '#locator-search-input', function() {
+        onSearch();
+    });
+
+    $(document).on('click', '.toggle-search-by', function() {
+        onToggleSearchBy();
+    });
+});
+
+function onSearch() {
+    var input, searchResults;
+    input = $('#locator-search-input');
+    searchResults = $('#locator-search-results');
+
+    var isSearched = input.val().length > 0;
+
+    if (isSearched) {
+        if (searchResults.css('visibility') === 'hidden') {
+            searchResults.css({
+                visibility: 'visible',
+                opacity: 1
+            });
+        }
+    } else {
+        if (searchResults.css('visibility') !== 'hidden') {
+            searchResults.css({
+                visibility: 'hidden',
+                opacity: 0
+            });
+        }
+    }
+}
+
+function onToggleSearchBy() {
+    var searchByDiv = $('#locator-search-searchby-container');
+    var newSearchBy;
+
+    if (searchByDiv.data("searchBy") === "area") {
+        newSearchBy = "info"
+    } else {
+        newSearchBy = "area"
+    }
+
+    searchByDiv.data("searchBy", newSearchBy);
+
+    updateSearchByText();
+}
+
+function updateSearchByText() {
+    var searchByDiv = $('#locator-search-searchby-container');
+    var searchByInput = $('#locator-search-input');
+    var searchByText = $('#locator-search-searchby-text');
+    searchByInput[0].placeholder = window.innerWidth >= 768 ? presets[searchByDiv.data("searchBy")].placeholder : presets[searchByDiv.data("searchBy")].placeholderMobile;
+    searchByText[0].innerText = presets[searchByDiv.data("searchBy")].searchby_text;
+}
+      }
 }
 </script>
