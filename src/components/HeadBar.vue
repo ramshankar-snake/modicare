@@ -1371,7 +1371,7 @@
                         </div>
 
                         <div class="nav-search-results-item">
-                            <router-link to="/event">Events & Programs</router-link>
+                            <router-link to="/events">Events & Programs</router-link>
                         </div>
 
                         <div class="nav-search-results-item">
