@@ -264,5 +264,10 @@ export default {
           components: {
          SideMenu,
       },
+      mounted: function(){
+        $( function(){
+            $("body").removeClass("side-menu-open");
+        })
+      }
 }
 </script>

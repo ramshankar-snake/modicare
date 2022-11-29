@@ -37,6 +37,8 @@ import CataloguePage from './pages/CataloguePage.vue'
 
 
 import IndexPage from './pages/post/IndexPage.vue'
+import MyInfo from './pages/MyInfo.vue'
+import MyOrders from './pages/MyOrders.vue'
 
 
 import { createRouter, createWebHistory } from 'vue-router';
@@ -241,6 +243,18 @@ const routes = [
         component: IndexPage,
         meta: { layout: 'Post-layout' },
         path: '/post/index'
+    },
+    {
+        name: 'MyInfo',
+        component: MyInfo,
+        meta: { layout: 'Post-layout' },
+        path: '/post/my-info'
+    },
+    {
+        name: 'MyOrders',
+        component: MyOrders,
+        meta: { layout: 'Post-layout' },
+        path: '/post/my-orders'
     },
     {
         path: "/pre2",

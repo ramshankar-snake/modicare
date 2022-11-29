@@ -224,5 +224,27 @@ export default {
     components: {
          SideMenu,
       },
+      mounted(){
+    var body = $('body');
+    var isAnimating;
+        // if (body.hasClass('about-menu-dropdown-open')) {
+        
+        // }
+        var dropdown = $('.about-menu-dropdown');
+    var isDropdownVisible = $('.about-menu-dropdown:visible').length;
+
+    var animationSpeed = 300;
+
+    if (!isAnimating) {
+       
+        body.removeClass("about-menu-dropdown-open");
+
+        if (isDropdownVisible) {
+            dropdown.fadeOut(animationSpeed, function() {
+                isAnimating = false;
+            });
+        }
+    }
+  }
 }
 </script>

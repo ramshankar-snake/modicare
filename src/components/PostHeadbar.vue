@@ -44,16 +44,23 @@
                           </a>
                           <div class="nav-dropdown user-menu-dropdown">
                                   <div class="nav-dropdown-list">
-                                      <!-- <div class="nav-dropdown-title">Hey!</div> -->
-                                      <div class="nav-dropdown-item">
-                                          Hey User!
-                                      </div>
-                                    
-                                      <div class="nav-dropdown-item-separator"></div>
-                                      <div class="nav-dropdown-item">
-                                          <a href="javascript:;" class="nav-dropdown-item-link">Logout</a>
-                                      </div>
+                                    <div class="nav-dropdown-title">Hey User!</div>
+                                    <!-- <div class="nav-dropdown-item">
+                                        Hey User!
+                                    </div> -->
+                                    <div class="nav-dropdown-item">
+                                        <router-link to="/post/my-info" class="nav-dropdown-item-link nav-dropdown-item-link-primary">My Profile</router-link>
+                                    </div>
+                                    <div class="nav-dropdown-item-separator"></div>
+                                    <div class="nav-dropdown-item">
+                                        <router-link to="/post/my-orders" class="nav-dropdown-item-link nav-dropdown-item-link-primary">My Orders</router-link>
+                                    </div>
+                                    <div class="nav-dropdown-item-separator"></div>
+                                    <div class="nav-dropdown-item">
+                                        <a href="javascript:;" class="nav-dropdown-item-link">Logout</a>
+                                    </div>
                                   </div>
+                                  
                           </div>
                       </div>
                       <div class="shopping-bag-dropdown-container nav-dropdown-container">

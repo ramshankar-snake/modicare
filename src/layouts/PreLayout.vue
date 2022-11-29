@@ -15,7 +15,9 @@ import FooterBar from '../components/FooterBar.vue'
     components: {
       Headbar,
       FooterBar
-    }
+    },
+    
+
   }
 </script>
 

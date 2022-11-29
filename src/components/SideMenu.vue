@@ -11,7 +11,7 @@
 
                 <div class="side-menu-title">All Products</div>
                 <div class="side-menu-title-link">
-                    <router-link to="catalogues" class="icon-after icon-chevronright">View Catalogues</router-link>
+                    <router-link to="/catalogues" class="icon-after icon-chevronright">View Catalogues</router-link>
                 </div>
 
                 <ul class="side-menu-nav-list">

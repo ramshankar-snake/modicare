@@ -15,6 +15,7 @@ $.fancybox.defaults.btnTpl.share = '<button data-fancybox-share class="fancybox-
 var isAnimating = false;
 
 $(function(){
+    closeAllDropdowns();
 
     $(document).on('click', '.toggle-shopping-bag-notification', function() {
         shoppingBagNotification();
@@ -192,7 +193,7 @@ $(function(){
         }
     });
 
-    // $(".toggle-user-menu-dropdown").hover(function() {
+    // $(".toggle-user-menu-dropdown").on('mouseover' ,function() {
     //     var isDropdownVisible = $('.user-menu-dropdown:visible').length;
     //     if (!isDropdownVisible) {
     //         closeAllDropdowns();
@@ -254,7 +255,7 @@ $(function(){
     //     alert(1)
     //     toggleSideMenu();
     // });
-    $(".toggle-side-menu").hover(function() {
+    $(".toggle-side-menu").on('mouseover', function() {
         
         $("body").removeClass("side-menu-open");
         toggleSideMenu();

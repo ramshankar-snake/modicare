@@ -44,13 +44,13 @@
                           </a>
                           <div class="nav-dropdown user-menu-dropdown">
                                   <div class="nav-dropdown-list">
-                                      <!-- <div class="nav-dropdown-title">Hey!</div> -->
-                                      <div class="nav-dropdown-item">
-                                          Hey User!
-                                      </div>
+                                      <div class="nav-dropdown-title">Hey User!</div>
                                       <!-- <div class="nav-dropdown-item">
-                                          <router-link to="/register-registration-type" class="nav-dropdown-item-link nav-dropdown-item-link-primary">Register</router-link>
+                                          Hey User!
                                       </div> -->
+                                      <div class="nav-dropdown-item">
+                                          <router-link to="/post/my-info" class="nav-dropdown-item-link nav-dropdown-item-link-primary">My Profile</router-link>
+                                      </div>
                                       <div class="nav-dropdown-item-separator"></div>
                                       <div class="nav-dropdown-item">
                                           <a href="javascript:;" class="nav-dropdown-item-link">Logout</a>
@@ -2696,17 +2696,17 @@
                               </a>
                               <div class="nav-dropdown user-mobile-menu-dropdown">
                                   <div class="nav-dropdown-list">
-                                      <div class="nav-dropdown-title">Hey!</div>
-                                      <div class="nav-dropdown-item">
-                                          <a href="@/sign-in.html" class="nav-dropdown-item-link nav-dropdown-item-link-primary">Sign In</a>
-                                      </div>
-                                      <div class="nav-dropdown-item">
-                                          <a href="@/register-registration-type.html" class="nav-dropdown-item-link nav-dropdown-item-link-primary">Register</a>
-                                      </div>
-                                      <div class="nav-dropdown-item-separator"></div>
-                                      <div class="nav-dropdown-item">
-                                          <a href="javascript:;" class="nav-dropdown-item-link">Support</a>
-                                      </div>
+                                    <div class="nav-dropdown-title">Hey User!</div>
+                                    <!-- <div class="nav-dropdown-item">
+                                        Hey User!
+                                    </div> -->
+                                    <div class="nav-dropdown-item">
+                                        <router-link to="/post/my-info" class="nav-dropdown-item-link nav-dropdown-item-link-primary">My Profile</router-link>
+                                    </div>
+                                    <div class="nav-dropdown-item-separator"></div>
+                                    <div class="nav-dropdown-item">
+                                        <a href="javascript:;" class="nav-dropdown-item-link">Logout</a>
+                                    </div>
                                   </div>
                               </div>
                           </div>
