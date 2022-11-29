@@ -7,11 +7,11 @@ $.fancybox.defaults.animationEffect = false;
 $.fancybox.defaults.wheel = false;
 $.fancybox.defaults.infobar = false;
 $.fancybox.defaults.idleTime = 0;
-$.fancybox.defaults.btnTpl.arrowLeft = '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}"><img src="./icons/btn-arrow-left.svg" alt="{{PREV}}" /></button>';
-$.fancybox.defaults.btnTpl.arrowRight = '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}"><img src="./icons/btn-arrow-right.svg" alt="{{NEXT}}" /></button>';
-$.fancybox.defaults.btnTpl.download = '<a download data-fancybox-download class="fancybox-button fancybox-button--download" title="{{DOWNLOAD}}" href="javascript:;"><img src="./icons/icon-download-white.svg" alt="{{DOWNLOAD}}" /></a>';
-$.fancybox.defaults.btnTpl.close = '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}"><img src="js/icons/icon-close-circled-dark.svg" alt="{{CLOSE}}" /></button>';
-$.fancybox.defaults.btnTpl.share = '<button data-fancybox-share class="fancybox-button fancybox-button--share" title="{{SHARE}}"><img src="js/icons/icon-share-white.svg" alt="{{SHARE}}" /></button>';
+$.fancybox.defaults.btnTpl.arrowLeft = '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}"><img src="../src/assets/images/btn-arrow-left.svg" alt="{{PREV}}" /></button>';
+$.fancybox.defaults.btnTpl.arrowRight = '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}"><img src="../src/assets/images/btn-arrow-right.svg" alt="{{NEXT}}" /></button>';
+$.fancybox.defaults.btnTpl.download = '<a download data-fancybox-download class="fancybox-button fancybox-button--download" title="{{DOWNLOAD}}" href="javascript:;"><img src="../src/assets/images/icons/icon-download-white.svg" alt="{{DOWNLOAD}}" /></a>';
+$.fancybox.defaults.btnTpl.close = '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}"><img src="../src/assets/images/icons/icon-close-circled-dark.svg" alt="{{CLOSE}}" /></button>';
+$.fancybox.defaults.btnTpl.share = '<button data-fancybox-share class="fancybox-button fancybox-button--share" title="{{SHARE}}"><img src="../src/assets/images/icons/icon-share-white.svg" alt="{{SHARE}}" /></button>';
 var isAnimating = false;
 
 $(function(){
