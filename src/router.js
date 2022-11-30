@@ -23,6 +23,7 @@ import Joinus2Coapplicant from './pages/Joinus2Coapplicant.vue'
 import Joinus2Addresscontact from './pages/Joinus2Addresscontact.vue'
 import Joinus2Bankdetails from './pages/Joinus2Bankdetails.vue'
 import Joinus2Confirmation from './pages/Joinus2Confirmation.vue'
+import AchieversArticle from './pages/AchieversArticle.vue'
 
 import TermsConditions from './pages/TermsConditions.vue'
 import ForgotPassword from './pages/ForgotPassword.vue'
@@ -236,6 +237,12 @@ const routes = [
         component: CataloguePage,
          meta: { layout: 'PreLayout' },
         path: '/catalogues'
+    },
+    {
+        name: 'AchieversArticle',
+        component: AchieversArticle,
+         meta: { layout: 'PreLayout' },
+        path: '/achievers-article'
     },
 
     {

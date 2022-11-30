@@ -75,5 +75,27 @@ export default {
     components: {
          SideMenu,
       },
+      mounted(){
+        var body = $('body');
+    var isAnimating;
+        // if (body.hasClass('about-menu-dropdown-open')) {
+        
+        // }
+        var dropdown = $('.user-menu-dropdown');
+    var isDropdownVisible = $('.user-menu-dropdown:visible').length;
+
+    var animationSpeed = 300;
+
+    if (!isAnimating) {
+       
+        body.removeClass("user-menu-dropdown-open");
+
+        if (isDropdownVisible) {
+            dropdown.fadeOut(animationSpeed, function() {
+                isAnimating = false;
+            });
+        }
+    }
+      }
 }
 </script>

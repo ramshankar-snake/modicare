@@ -14,19 +14,19 @@
     <div id="top-deals-products-carousel" class="product-listing-carousel-container modi-container mb-5">
         <div class="product-listing-carousel swiper-container">
             <div class="swiper-wrapper">
-                    <div class="swiper-slide product-listing-carousel-slide">
+                    <div v-for="product in products" class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
                                     <router-link to="/product-details" class="listing-item-image-container">
-                                        <img class="listing-item-image" src="@/assets/images/products/products-lips-1.png" />
+                                        <img class="listing-item-image" :src="'https://media.modicare.com/ProductCategory/thumb/' +product.productThumbnailImage" />
                                     </router-link>
                                     <div class="listing-item-description-container">
-                                        <router-link to="/product-details" class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion with Vitamin C</router-link>
+                                        <router-link to="/product-details" class="listing-item-description">{{  product.productName }}</router-link>
                                         <a href="javascript:;" class="listing-item-quick-view-link" data-toggle="modal" data-target="#modi-product-quick-view-modal">Quick view</a>
                                         <div class="listing-item-additional">
-                                            <div class="listing-item-size">30ml</div>
-                                            <div class="listing-item-price">£ 22</div>
+                                            <div class="listing-item-size">{{ product.pack }}</div>
+                                            <div class="listing-item-price">{{ product.mrp }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -145,12 +145,12 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-item-unavailable-modal">Add to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary" data-toggle="modal" data-target="#modi-add-to-cart-without-login-modal">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide product-listing-carousel-slide">
+                    <!-- <div class="swiper-slide product-listing-carousel-slide">
                         <div class="listing-item">
                             <div class="listing-item-link">
                                 <div class="listing-item-inner">
@@ -2733,7 +2733,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
             </div>
         </div>
 
@@ -2746,8 +2746,23 @@
     </div>
 </template>
 <script>
+import axios from "axios";
 export default {
     name: 'TopDeals',
+    data(){
+                return{
+                    products: []
+                }
+            },
+    async mounted(){
+                // let id = this.$route.params.id;
+            let result = await axios.get("https://uat-api.modicare.com/api/app/prelogin/featured/products");
+           
+            if(result.status==200) {
+                this.products = result.data.result.topDeals;
+            }
+           
+            }
 }
 
 </script>

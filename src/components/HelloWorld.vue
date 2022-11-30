@@ -94,7 +94,9 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
     });
 
     var mostLovedProductsCarousel = new Swiper('#most-loved-products-carousel .swiper-container', {
-        slidesPerView: 2,
+        observer: true,
+            observeParents: true,
+        slidesPerView: 4,
         spaceBetween: 10,
         loop: true,
         navigation: {
@@ -108,10 +110,23 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
             1024: {
                 slidesPerView: 4
             }
+        },
+        on: {
+            resize: function(swiper) {
+                fixCarouselNavPositioning(swiper);
+            },
+            imagesReady: function(swiper) {
+                fixCarouselNavPositioning(swiper);
+            },
+            slideChangeTransitionEnd: function(swiper) {
+                fixCarouselNavPositioning(swiper);
+            },
         }
     });
 
     var justInProductsCarousel = new Swiper('#just-in-products-carousel .swiper-container', {
+        observer: true,
+            observeParents: true,
         slidesPerView: 2,
         spaceBetween: 10,
         loop: true,
@@ -130,6 +145,8 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
     });
 
     var topDealsProductsCarousel = new Swiper('#top-deals-products-carousel .swiper-container', {
+        observer: true,
+            observeParents: true,
         slidesPerView: 2,
         spaceBetween: 10,
         loop: true,
@@ -148,7 +165,7 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
     });
 
     var gallery = new Swiper('.products-showcase-gallery', {
-        slidesPerView: 'auto',
+        slidesPerView: '2.5',
         freeMode: true,
         grabCursor: true,
         navigation: {

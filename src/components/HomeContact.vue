@@ -15,7 +15,7 @@
                             <div class="home-contact-us-type active" id="home-contact-us-type-shopping">
                                 Shopping
                             </div>
-                            <input type="checkbox" name="form-type" id="home-contact-us-type-toggle">
+                            <input type="checkbox" name="type"  id="home-contact-us-type-toggle">
                             <label for="home-contact-us-type-toggle"></label>
                             <div class="home-contact-us-type" id="home-contact-us-type-business-opportunity">
                                 Business Opportunity
@@ -23,29 +23,29 @@
                         </div>
                         <div class="modi-form-row modi-form-row__1-1">
                             <div class="md-form">
-                                <input type="text" id="form-name" name="form-name" class="form-control" />
+                                <input type="text" id="form-name" name="name" v-model="name" class="form-control" />
                                 <label for="form-name">Name</label>
                             </div>
     
                             <div class="md-form">
-                                <input type="text" id="form-phone" name="form-phone" class="form-control" />
+                                <input type="text" id="form-phone" name="mobile" v-model="mobile" class="form-control" />
                                 <label for="form-phone">Phone</label>
                             </div>
                         </div>
     
                         <div class="modi-form-row modi-form-row__1-1">
                             <div class="md-form">
-                                <input type="text" id="form-email" name="form-email" class="form-control" />
+                                <input type="email" id="form-email" name="email" v-model="email" class="form-control" />
                                 <label for="form-email">Email</label>
                             </div>
     
                             <div class="md-form">
-                                <input type="text" id="form-location" name="form-location" class="form-control" />
+                                <input type="text" id="form-location" name="location" v-model="location" class="form-control" />
                                 <label for="form-location">Location</label>
                             </div>
                         </div>
     
-                        <input class="home-contact-us-btn btn modi-btn modi-btn__primary px-5" type="submit" value="Send" />
+                        <input class="home-contact-us-btn btn modi-btn modi-btn__primary px-5" type="submit" @click="submit()" value="Send" />
     
                         <div class="modi-form-checkbox-container modi-form-checkbox-container__px mt-4">
                             <label for="form-checkbox-1">
@@ -86,7 +86,30 @@
     </section>
 </template>
 <script>
+import axios from "axios";
 export default {
     name: 'GuranTee',
+    data(){
+                return{
+                name:'',
+                email:'',
+                mobile:'',
+                location:''
+                }
+            },
+            methods:{
+                    async submit(){
+                     await axios.post("https://uat-api.modicare.com/api/app/prelogin/enquiry",{
+                            name:this.name,
+                            email:this.email,
+                            mobile:this.mobile,
+                            location:this.location
+                    });
+                    
+                        // this.$router.push({name:"Login"});
+                   
+
+                }
+            },
 }
 </script>

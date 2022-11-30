@@ -41,162 +41,162 @@
         <section class="achievers-listing">
             <div class="achievers-listing-grid">
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-1.png" alt="Gaurav Negi" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Gaurav Negi
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-2.png" alt="Pramilla Nishant Bhargava" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Pramilla Nishant Bhargava
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-3.png" alt="Mahesh Rai" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Mahesh Rai
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-4.png" alt="Dilip Krishnan" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Dilip Krishnan
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-5.png" alt="Suresh Roy" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Suresh Roy
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-6.png" alt="Anita Pandey" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Anita Pandey
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-7.png" alt="Sunil Tyagi" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Sunil Tyagi
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-8.png" alt="Ranjan Mehta" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Ranjan Mehta
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-9.png" alt="Veeresh KB" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Veeresh KB
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-1.png" alt="Gaurav Negi" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Gaurav Negi
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-2.png" alt="Pramilla Nishant Bhargava" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Pramilla Nishant Bhargava
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-3.png" alt="Mahesh Rai" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Mahesh Rai
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-4.png" alt="Dilip Krishnan" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Dilip Krishnan
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-5.png" alt="Suresh Roy" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Suresh Roy
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-6.png" alt="Anita Pandey" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Anita Pandey
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-7.png" alt="Sunil Tyagi" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Sunil Tyagi
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-8.png" alt="Ranjan Mehta" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Ranjan Mehta
                     </div>
                 </div>
                 <div class="achievers-listing-item">
-                    <a href="./achievers-article.html" class="achievers-listing-item-image-link">
+                    <router-link to="/achievers-article" class="achievers-listing-item-image-link">
                         <img src="@/assets/images/achievers/achievers-9.png" alt="Veeresh KB" class="achievers-listing-item-image" />
-                    </a>
+                    </router-link>
 
                     <div class="achievers-listing-item-text">
                         Veeresh KB

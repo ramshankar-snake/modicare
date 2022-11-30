@@ -15,14 +15,7 @@
                 </div>
 
                 <ul class="side-menu-nav-list">
-                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Wellness</router-link></li>
-                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Skin Care</router-link></li>
-                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Color</router-link></li>
-                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Home Care</router-link></li>
-                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">F&B</router-link></li>
-                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Watches</router-link></li>
-                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Tech</router-link></li>
-                    <li class="side-menu-nav-list-item waves-effect"><router-link to="/product-listing">Jewelry</router-link></li>
+                    <li v-for="menu in menus"  class="side-menu-nav-list-item waves-effect"><router-link :to=" menu.url">{{ menu.title }}</router-link></li>
                 </ul>
 
                 <div class="side-menu-links">
@@ -175,7 +168,24 @@
 </div>
 </template>
 <script>
+import axios from "axios";
 export default {
-    name: 'SideMenu'
+    name: 'SideMenu',
+    data(){
+                return{
+                    menus: []
+                }
+            },
+    async mounted(){
+                // let id = this.$route.params.id;
+            let result = await axios.get("https://uat-api.modicare.com/api/app/prelogin/menu");
+           
+            if(result.status==200) {
+                // console.log(result.data);
+                this.menus = result.data.result;
+                
+            }
+           
+            }
 }
 </script>

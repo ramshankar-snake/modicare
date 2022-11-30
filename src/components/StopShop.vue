@@ -9,22 +9,22 @@
                 </div>
             </div>
     
-            <div class="products-showcase-gallery swiper-container">
+            <div  class="products-showcase-gallery swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide products-showcase-gallery-item">
-                        <router-link to="/product-listing" class="products-showcase-gallery-item-link">
+                    <div v-for="menu in menus" class="swiper-slide products-showcase-gallery-item">
+                        <router-link :to="menu.url" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
-                                    <source srcset="@/assets/images/gallery-wellness.webp" type="image/webp">
-                                    <source srcset="@/assets/images/gallery-wellness.jpg" type="image/jpeg">
-                                    <img src="@/assets/images/gallery-wellness.jpg" alt="" />
+                                    <!-- <source srcset="@/assets/images/gallery-wellness.webp" type="image/webp">
+                                    <source srcset="@/assets/images/gallery-wellness.jpg" type="image/jpeg"> -->
+                                    <img :src="menu.image" alt="" />
                                 </picture>
                                 <div class="products-showcase-gallery-item-btn">Shop now</div>
                             </div>
-                            <div class="products-showcase-gallery-item-text">Wellness</div>
+                            <div class="products-showcase-gallery-item-text">{{ menu.title }}</div>
                         </router-link>
                     </div>
-                    <div class="swiper-slide products-showcase-gallery-item">
+                    <!-- <div class="swiper-slide products-showcase-gallery-item">
                         <router-link to="/product-listing" class="products-showcase-gallery-item-link">
                             <div class="products-showcase-gallery-item-image-container">
                                 <picture>
@@ -219,7 +219,7 @@
                             </div>
                             <div class="products-showcase-gallery-item-text">Literature</div>
                         </router-link>
-                    </div>
+                    </div> -->
                 </div>
     
                 <div class="swiper-button-prev">
@@ -235,7 +235,24 @@
     </section>
 </template>
 <script>
+import axios from "axios";
 export default {
     name: 'StopShop',
+    data(){
+                return{
+                    menus: []
+                }
+            },
+    async mounted(){
+                // let id = this.$route.params.id;
+            let result = await axios.get("https://uat-api.modicare.com/api/app/prelogin/menu");
+           
+            if(result.status==200) {
+                // console.log(result.data);
+                this.menus = result.data.result;
+              
+            }
+           
+            }
 }
 </script>
