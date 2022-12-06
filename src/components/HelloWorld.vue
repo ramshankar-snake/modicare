@@ -71,6 +71,8 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
       $(function(){
     
     var heroBannerCarousel = new Swiper('.hero-banner-carousel-container', {
+     observer: true,
+            observeParents: true,
         slidesPerView: 1,
         loop: true,
         navigation: {
@@ -165,6 +167,8 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
     });
 
     var gallery = new Swiper('.products-showcase-gallery', {
+     observer: true,
+            observeParents: true,
         slidesPerView: 'auto',
         freeMode: true,
         grabCursor: true,
