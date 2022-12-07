@@ -200,7 +200,8 @@ const routes = [
         name: 'ProductListing',
         component: ProductListing,
          meta: { layout: 'PreLayout' },
-        path: '/product-listing'
+        path: '/products/:category',
+        props: true
     },
     {
         name: 'ProductDetails',
