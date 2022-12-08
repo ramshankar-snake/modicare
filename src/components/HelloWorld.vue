@@ -185,6 +185,29 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
             },
         }
     });
+    
+    var body = $('body');
+    // var isAnimating;
+        if (body.hasClass('side-menu-open')) {
+            
+            body.removeClass("side-menu-open");
+        }
+    //     var dropdown = $('.about-menu-dropdown');
+    // var isDropdownVisible = $('.about-menu-dropdown:visible').length;
+
+    // var animationSpeed = 300;
+
+    // if (!isAnimating) {
+       
+    //     body.removeClass("about-menu-dropdown-open");
+
+    //     if (isDropdownVisible) {
+    //         dropdown.fadeOut(animationSpeed, function() {
+    //             isAnimating = false;
+    //         });
+    //     }
+    // }
+
 });
 
 $(document).on('change', '#home-contact-us-type-toggle', function(e) {

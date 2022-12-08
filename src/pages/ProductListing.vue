@@ -308,9 +308,13 @@ export default {
         SideMenu,
     },
     mounted: function () {
-        $(function () {
-            $("body").removeClass("side-menu-open");
-        })
+       
+    if (body.hasClass('side-menu-open')) {
+            alert('g');
+            body.removeClass("side-menu-open");
+        }
+
+  
     },
     async mounted() {
         let result = await axios.get(`https://uat-api.modicare.com/api/app/prelogin/categories/${this.$route.params.category}`);

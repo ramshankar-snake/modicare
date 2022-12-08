@@ -486,7 +486,8 @@ export default {
             products: [],
             productDetail: [],
             Description: [],
-            features:[]
+            features:[],
+            
         }
     },
 
@@ -505,7 +506,9 @@ export default {
                
 
             }
-        }
+        },
+
+        
     },
     mounted() {
         $(function () {

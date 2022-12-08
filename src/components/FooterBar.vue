@@ -246,35 +246,7 @@
       </div>
       </footer>
       
-      <div class="modal modi-modal modi-modal__xs fade" id="modi-add-to-cart-without-login-modal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-body text-center">
-                  <a href="javascript:;" class="modi-modal-close" data-dismiss="modal" aria-label="Close">
-                      <i class="material-icons">close</i>
-                  </a>
-      
-                  <div class="modi-modal-heading mb-4 px-4">
-                      Enter delivery pin Code to check availability
-                  </div>
-      
-                  <div class="d-flex justify-content-center">
-                      <input type="text" id="form-pin-code" name="form-pin-code" class="modi-form-pin-code form-control" placeholder="Pin code" />
-                  </div>
-      
-                  <div class="mt-3">
-                      <a href="javascript:;" class="btn modi-btn modi-btn__xs modi-btn__primary px-5 py-2">Apply</a>
-                  </div>
-      
-                  <div class="or-with-line my-4">or</div>
-      
-                  <div class="">
-                      <a href="javascript:;" class="text-underline">Sign in</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
+     
       
       <div class="modal modi-modal modi-modal__xs fade" id="modi-quick-select-or-change-address-modal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
@@ -821,7 +793,9 @@
     </template>
     
     <script>
+    import axios from "axios";
     export default {
       name: "FooterBar",
+
     };
     </script>

@@ -15,7 +15,7 @@
                 </div>
 
                 <ul class="side-menu-nav-list">
-                    <li v-for="menu in menus"  class="side-menu-nav-list-item waves-effect"><router-link :to=" menu.url">{{ menu.title }}</router-link></li>
+                    <li v-for="menu in menus"  @click="sidemenu()" class="side-menu-nav-list-item waves-effect"><router-link :to=" menu.url">{{ menu.title }}</router-link></li>
                 </ul>
 
                 <div class="side-menu-links">
@@ -186,6 +186,76 @@ export default {
                 
             }
            
+            },
+            methods:{
+                sidemenu(){
+    //                 var body = $('body');
+    // if (body.hasClass('side-menu-open')) {
+    //         alert('g');
+    //         body.removeClass("side-menu-open");
+    //     }
+    //     var dropdown = $('.side-menu');
+    // var isDropdownVisible = $('.side-menu:visible').length;
+
+    // var animationSpeed = 300;
+
+    // if (!isAnimating) {
+       
+    //     body.removeClass("side-menu-open");
+    //     $("#side-menu-overlay").css('display','none')
+    //     if (isDropdownVisible) {
+    //         dropdown.fadeOut(animationSpeed, function() {
+    //             isAnimating = false;
+    //         });
+    //     }
+    // }
+
+    var body = $('body');
+    var sideMenu = $('.side-menu');
+    var sideMenuOverlay = $('.side-menu-overlay');
+    var isSideMenuOpen = body.hasClass('side-menu-open');
+    var sideMenuAnimationSpeed = 500;
+    var overlayAnimationSpeed = 500;
+    var isAnimating;
+
+    if (!isAnimating) {
+        
+        isAnimating = true;
+
+        if (isSideMenuOpen) {
+            body.toggleClass('side-menu-open');
+
+            sideMenuOverlay.animate({
+                "opacity": 0
+            }, overlayAnimationSpeed, function() {
+                sideMenuOverlay.hide();
+            });
+
+            sideMenu.animate({
+                "left": "-100%"
+            }, sideMenuAnimationSpeed, function() {
+                sideMenu.hide();
+                isAnimating = false;
+            });
+        } else {
+            body.toggleClass('side-menu-open');
+
+            sideMenuOverlay.show();
+            sideMenuOverlay.animate({
+                "opacity": 0.75
+            }, overlayAnimationSpeed);
+
+            sideMenu.show();
+            sideMenu.animate({
+                "left": "0"
+            }, sideMenuAnimationSpeed, function() {
+                isAnimating = false;
+            });
+        }
+    }
+
+  
+                }
             }
 }
 </script>
