@@ -5,11 +5,14 @@
             <div class="modi-container-flex pdt-main-container">
                 <div class="pdt-main-images col-12 col-md-6">
                     <div class="pdt-main-gallery-top swiper-container">
-                        <div class="swiper-wrapper">
+                        <div v-if="(products.productImages != 0)" class="swiper-wrapper">
                             <div v-for="image in products.productImages" class="swiper-slide pdt-main-gallery-top-item">
                                 <img :src="image.zoomImagePath" alt="" />
                             </div>
 
+                        </div>
+                        <div v-if="(products.productImages == 0)" >
+                            <img :src="productDetail.productImage" style="width:100%;">
                         </div>
                     </div>
 
@@ -215,19 +218,6 @@
                             <div class="pdt-main-variant-option option-underline ">3.2g</div>
                         </div>
                     </div>
-
-                    <div class="pdt-main-variant-container" style="margin-top: 30px">
-                        <div class="pdt-main-variant-title">
-                            <p>Size</p>
-                        </div>
-                        <div class="pdt-main-variant-options-container">
-                            <div class="pdt-main-variant-option option-circle">S</div>
-                            <div class="pdt-main-variant-option option-circle">M</div>
-                            <div class="pdt-main-variant-option option-circle">L</div>
-                            <div class="pdt-main-variant-option option-circle">XL</div>
-                            <div class="pdt-main-variant-option option-circle active">XXL</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -242,11 +232,7 @@
                     </div>
                     <div id="modi-accordion-section-1" class="collapse show">
                         <div class="modi-accordion-section-body">
-                            {{ Description }}
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-
+                           <div v-html="Description"></div>
                             <div class="pdt-main-benefit-items-container">
                                 <div class="pdt-main-benefit-item">
                                     <div class="pdt-main-benefit-item-icon-container">
@@ -295,121 +281,15 @@
                     </div>
                 </div>
 
-                <div class="modi-accordion-section">
+                <div v-for="feature in features" class="modi-accordion-section">
                     <div class="modi-accordion-section-title-container">
                         <button class="modi-accordion-section-title waves-effect waves-light collapsed"
-                            data-toggle="collapse" data-target="#modi-accordion-section-2">
-                            Features & Benefits
+                            data-toggle="collapse" data-target="#modi-accordion-section-2" >
+                          {{feature.tagname}}
                         </button>
                     </div>
                     <div id="modi-accordion-section-2" class="collapse">
-                        <div class="modi-accordion-section-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modi-accordion-section">
-                    <div class="modi-accordion-section-title-container">
-                        <button class="modi-accordion-section-title waves-effect waves-light collapsed"
-                            data-toggle="collapse" data-target="#modi-accordion-section-3">
-                            Ingredients
-                        </button>
-                    </div>
-                    <div id="modi-accordion-section-3" class="collapse">
-                        <div class="modi-accordion-section-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modi-accordion-section">
-                    <div class="modi-accordion-section-title-container">
-                        <button class="modi-accordion-section-title waves-effect waves-light collapsed"
-                            data-toggle="collapse" data-target="#modi-accordion-section-4">
-                            Applications
-                        </button>
-                    </div>
-                    <div id="modi-accordion-section-4" class="collapse">
-                        <div class="modi-accordion-section-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modi-accordion-section">
-                    <div class="modi-accordion-section-title-container">
-                        <button class="modi-accordion-section-title waves-effect waves-light collapsed"
-                            data-toggle="collapse" data-target="#modi-accordion-section-5">
-                            Details
-                        </button>
-                    </div>
-                    <div id="modi-accordion-section-5" class="collapse">
-                        <img class="modi-accordion-image" src="https://via.placeholder.com/500" />
-                        <div class="modi-accordion-section-body">
-                            <a href="javascript:;" class="icon-after icon-chevronright">View Catalogue</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modi-accordion-section">
-                    <div class="modi-accordion-section-title-container">
-                        <button class="modi-accordion-section-title waves-effect waves-light collapsed"
-                            data-toggle="collapse" data-target="#modi-accordion-section-6">
-                            Other Info
-                        </button>
-                    </div>
-                    <div id="modi-accordion-section-6" class="collapse">
-                        <div class="modi-accordion-section-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
+                        <div class="modi-accordion-section-body" v-html="feature.tagdesc">
                         </div>
                     </div>
                 </div>
@@ -550,399 +430,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="listing-item">
-                            <a href="./b2c-product-details.html" class="listing-item-link">
-                                <div class="listing-item-inner">
-                                    <div class="listing-item-image-container">
-                                        <img class="listing-item-image" src="@/assets/images/products/products-lips-2.png" />
-                                    </div>
-                                    <div class="listing-item-description-container">
-                                        <div class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion</div>
-                                        <div class="listing-item-size">30ml</div>
-                                        <div class="listing-item-price font-medium">₹ 22</div>
-                                    </div>
-                                </div>
-                            </a>
-                                <div class="listing-item-footer-container">
-                                    <div class="listing-item-quantity modi-qty-dropdown-container">
-                                        <select
-                                            name="listing-item-quantity-select"
-                                            class="selectpicker modi-qty-dropdown"
-                                            data-live-search="true"
-                                            data-size="7"
-                                            data-style="modi-qty-dropdown-btn"
-                                            title="Qty"
-                                        >
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                                <option value="18">18</option>
-                                                <option value="19">19</option>
-                                                <option value="20">20</option>
-                                                <option value="21">21</option>
-                                                <option value="22">22</option>
-                                                <option value="23">23</option>
-                                                <option value="24">24</option>
-                                                <option value="25">25</option>
-                                                <option value="26">26</option>
-                                                <option value="27">27</option>
-                                                <option value="28">28</option>
-                                                <option value="29">29</option>
-                                                <option value="30">30</option>
-                                                <option value="31">31</option>
-                                                <option value="32">32</option>
-                                                <option value="33">33</option>
-                                                <option value="34">34</option>
-                                                <option value="35">35</option>
-                                                <option value="36">36</option>
-                                                <option value="37">37</option>
-                                                <option value="38">38</option>
-                                                <option value="39">39</option>
-                                                <option value="40">40</option>
-                                                <option value="41">41</option>
-                                                <option value="42">42</option>
-                                                <option value="43">43</option>
-                                                <option value="44">44</option>
-                                                <option value="45">45</option>
-                                                <option value="46">46</option>
-                                                <option value="47">47</option>
-                                                <option value="48">48</option>
-                                                <option value="49">49</option>
-                                                <option value="50">50</option>
-                                                <option value="51">51</option>
-                                                <option value="52">52</option>
-                                                <option value="53">53</option>
-                                                <option value="54">54</option>
-                                                <option value="55">55</option>
-                                                <option value="56">56</option>
-                                                <option value="57">57</option>
-                                                <option value="58">58</option>
-                                                <option value="59">59</option>
-                                                <option value="60">60</option>
-                                                <option value="61">61</option>
-                                                <option value="62">62</option>
-                                                <option value="63">63</option>
-                                                <option value="64">64</option>
-                                                <option value="65">65</option>
-                                                <option value="66">66</option>
-                                                <option value="67">67</option>
-                                                <option value="68">68</option>
-                                                <option value="69">69</option>
-                                                <option value="70">70</option>
-                                                <option value="71">71</option>
-                                                <option value="72">72</option>
-                                                <option value="73">73</option>
-                                                <option value="74">74</option>
-                                                <option value="75">75</option>
-                                                <option value="76">76</option>
-                                                <option value="77">77</option>
-                                                <option value="78">78</option>
-                                                <option value="79">79</option>
-                                                <option value="80">80</option>
-                                                <option value="81">81</option>
-                                                <option value="82">82</option>
-                                                <option value="83">83</option>
-                                                <option value="84">84</option>
-                                                <option value="85">85</option>
-                                                <option value="86">86</option>
-                                                <option value="87">87</option>
-                                                <option value="88">88</option>
-                                                <option value="89">89</option>
-                                                <option value="90">90</option>
-                                                <option value="91">91</option>
-                                                <option value="92">92</option>
-                                                <option value="93">93</option>
-                                                <option value="94">94</option>
-                                                <option value="95">95</option>
-                                                <option value="96">96</option>
-                                                <option value="97">97</option>
-                                                <option value="98">98</option>
-                                                <option value="99">99</option>
-                                                <option value="100">100</option>
-                                        </select>
-                                    </div>
-                                    <div class="listing-item-add-to-bag">
-                                        <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary toggle-shopping-bag-notification">Add to cart</a>
-                                    </div>
-                                </div>
-                        </div>
-        
-                        <div class="listing-item">
-                            <a href="./b2c-product-details.html" class="listing-item-link">
-                                <div class="listing-item-inner">
-                                    <div class="listing-item-image-container">
-                                        <img class="listing-item-image" src="@/assets/images/products/products-lips-3.png" />
-                                    </div>
-                                    <div class="listing-item-description-container">
-                                        <div class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion</div>
-                                        <div class="listing-item-size">30ml</div>
-                                        <div class="listing-item-price font-medium">₹ 22</div>
-                                    </div>
-                                </div>
-                            </a>
-                                <div class="listing-item-footer-container">
-                                    <div class="listing-item-quantity modi-qty-dropdown-container">
-                                        <select
-                                            name="listing-item-quantity-select"
-                                            class="selectpicker modi-qty-dropdown"
-                                            data-live-search="true"
-                                            data-size="7"
-                                            data-style="modi-qty-dropdown-btn"
-                                            title="Qty"
-                                        >
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                                <option value="18">18</option>
-                                                <option value="19">19</option>
-                                                <option value="20">20</option>
-                                                <option value="21">21</option>
-                                                <option value="22">22</option>
-                                                <option value="23">23</option>
-                                                <option value="24">24</option>
-                                                <option value="25">25</option>
-                                                <option value="26">26</option>
-                                                <option value="27">27</option>
-                                                <option value="28">28</option>
-                                                <option value="29">29</option>
-                                                <option value="30">30</option>
-                                                <option value="31">31</option>
-                                                <option value="32">32</option>
-                                                <option value="33">33</option>
-                                                <option value="34">34</option>
-                                                <option value="35">35</option>
-                                                <option value="36">36</option>
-                                                <option value="37">37</option>
-                                                <option value="38">38</option>
-                                                <option value="39">39</option>
-                                                <option value="40">40</option>
-                                                <option value="41">41</option>
-                                                <option value="42">42</option>
-                                                <option value="43">43</option>
-                                                <option value="44">44</option>
-                                                <option value="45">45</option>
-                                                <option value="46">46</option>
-                                                <option value="47">47</option>
-                                                <option value="48">48</option>
-                                                <option value="49">49</option>
-                                                <option value="50">50</option>
-                                                <option value="51">51</option>
-                                                <option value="52">52</option>
-                                                <option value="53">53</option>
-                                                <option value="54">54</option>
-                                                <option value="55">55</option>
-                                                <option value="56">56</option>
-                                                <option value="57">57</option>
-                                                <option value="58">58</option>
-                                                <option value="59">59</option>
-                                                <option value="60">60</option>
-                                                <option value="61">61</option>
-                                                <option value="62">62</option>
-                                                <option value="63">63</option>
-                                                <option value="64">64</option>
-                                                <option value="65">65</option>
-                                                <option value="66">66</option>
-                                                <option value="67">67</option>
-                                                <option value="68">68</option>
-                                                <option value="69">69</option>
-                                                <option value="70">70</option>
-                                                <option value="71">71</option>
-                                                <option value="72">72</option>
-                                                <option value="73">73</option>
-                                                <option value="74">74</option>
-                                                <option value="75">75</option>
-                                                <option value="76">76</option>
-                                                <option value="77">77</option>
-                                                <option value="78">78</option>
-                                                <option value="79">79</option>
-                                                <option value="80">80</option>
-                                                <option value="81">81</option>
-                                                <option value="82">82</option>
-                                                <option value="83">83</option>
-                                                <option value="84">84</option>
-                                                <option value="85">85</option>
-                                                <option value="86">86</option>
-                                                <option value="87">87</option>
-                                                <option value="88">88</option>
-                                                <option value="89">89</option>
-                                                <option value="90">90</option>
-                                                <option value="91">91</option>
-                                                <option value="92">92</option>
-                                                <option value="93">93</option>
-                                                <option value="94">94</option>
-                                                <option value="95">95</option>
-                                                <option value="96">96</option>
-                                                <option value="97">97</option>
-                                                <option value="98">98</option>
-                                                <option value="99">99</option>
-                                                <option value="100">100</option>
-                                        </select>
-                                    </div>
-                                    <div class="listing-item-add-to-bag">
-                                        <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary toggle-shopping-bag-notification">Add to cart</a>
-                                    </div>
-                                </div>
-                        </div>
-        
-                        <div class="listing-item d-md-none d-lg-flex">
-                            <a href="./b2c-product-details.html" class="listing-item-link">
-                                <div class="listing-item-inner">
-                                    <div class="listing-item-image-container">
-                                        <img class="listing-item-image" src="@/assets/images/products/products-lips-4.png" />
-                                    </div>
-                                    <div class="listing-item-description-container">
-                                        <div class="listing-item-description">Urban Colour - Instant Radiance Illuminating Lotion</div>
-                                        <div class="listing-item-size">30ml</div>
-                                        <div class="listing-item-price font-medium">₹ 22</div>
-                                    </div>
-                                </div>
-                            </a>
-                                <div class="listing-item-footer-container">
-                                    <div class="listing-item-quantity modi-qty-dropdown-container">
-                                        <select
-                                            name="listing-item-quantity-select"
-                                            class="selectpicker modi-qty-dropdown"
-                                            data-live-search="true"
-                                            data-size="7"
-                                            data-style="modi-qty-dropdown-btn"
-                                            title="Qty"
-                                        >
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                                <option value="18">18</option>
-                                                <option value="19">19</option>
-                                                <option value="20">20</option>
-                                                <option value="21">21</option>
-                                                <option value="22">22</option>
-                                                <option value="23">23</option>
-                                                <option value="24">24</option>
-                                                <option value="25">25</option>
-                                                <option value="26">26</option>
-                                                <option value="27">27</option>
-                                                <option value="28">28</option>
-                                                <option value="29">29</option>
-                                                <option value="30">30</option>
-                                                <option value="31">31</option>
-                                                <option value="32">32</option>
-                                                <option value="33">33</option>
-                                                <option value="34">34</option>
-                                                <option value="35">35</option>
-                                                <option value="36">36</option>
-                                                <option value="37">37</option>
-                                                <option value="38">38</option>
-                                                <option value="39">39</option>
-                                                <option value="40">40</option>
-                                                <option value="41">41</option>
-                                                <option value="42">42</option>
-                                                <option value="43">43</option>
-                                                <option value="44">44</option>
-                                                <option value="45">45</option>
-                                                <option value="46">46</option>
-                                                <option value="47">47</option>
-                                                <option value="48">48</option>
-                                                <option value="49">49</option>
-                                                <option value="50">50</option>
-                                                <option value="51">51</option>
-                                                <option value="52">52</option>
-                                                <option value="53">53</option>
-                                                <option value="54">54</option>
-                                                <option value="55">55</option>
-                                                <option value="56">56</option>
-                                                <option value="57">57</option>
-                                                <option value="58">58</option>
-                                                <option value="59">59</option>
-                                                <option value="60">60</option>
-                                                <option value="61">61</option>
-                                                <option value="62">62</option>
-                                                <option value="63">63</option>
-                                                <option value="64">64</option>
-                                                <option value="65">65</option>
-                                                <option value="66">66</option>
-                                                <option value="67">67</option>
-                                                <option value="68">68</option>
-                                                <option value="69">69</option>
-                                                <option value="70">70</option>
-                                                <option value="71">71</option>
-                                                <option value="72">72</option>
-                                                <option value="73">73</option>
-                                                <option value="74">74</option>
-                                                <option value="75">75</option>
-                                                <option value="76">76</option>
-                                                <option value="77">77</option>
-                                                <option value="78">78</option>
-                                                <option value="79">79</option>
-                                                <option value="80">80</option>
-                                                <option value="81">81</option>
-                                                <option value="82">82</option>
-                                                <option value="83">83</option>
-                                                <option value="84">84</option>
-                                                <option value="85">85</option>
-                                                <option value="86">86</option>
-                                                <option value="87">87</option>
-                                                <option value="88">88</option>
-                                                <option value="89">89</option>
-                                                <option value="90">90</option>
-                                                <option value="91">91</option>
-                                                <option value="92">92</option>
-                                                <option value="93">93</option>
-                                                <option value="94">94</option>
-                                                <option value="95">95</option>
-                                                <option value="96">96</option>
-                                                <option value="97">97</option>
-                                                <option value="98">98</option>
-                                                <option value="99">99</option>
-                                                <option value="100">100</option>
-                                        </select>
-                                    </div>
-                                    <div class="listing-item-add-to-bag">
-                                        <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary toggle-shopping-bag-notification">Add to cart</a>
-                                    </div>
-                                </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -998,16 +485,14 @@ export default {
         return {
             products: [],
             productDetail: [],
-            Description: []
+            Description: [],
+            features:[]
         }
     },
 
     methods: {
         async fetchData(id) {
-            //      const route = useRoute();
-            // const userData = ref();
-            // var id = this.$route.params.id
-            console.log(id);
+            
             let result = await axios.get("https://uat-api.modicare.com/api/app/prelogin/product/details/" + id);
             console.log(result);
             if (result.status == 200) {
@@ -1015,7 +500,9 @@ export default {
                 this.productDetail = result.data.result.productDetail[0];
                 this.Description = result.data.result.productDetail[0].productDescription;
                 this.similarproducts = result.data.result.similarProducts;
-                console.log(this.Description);
+                this.features = result.data.result.features;
+                console.log(this.features);
+               
 
             }
         }
