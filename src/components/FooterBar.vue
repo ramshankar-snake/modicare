@@ -752,7 +752,7 @@
                                 <img src="@/assets/images/captcha_placeholder.png" alt="CAPTCHA" style="width: 70%;height: 50%;" />
                             </div>
     
-                            <router-link to="/post/index" class="btn modi-btn modi-btn__xs modi-btn__primary mt-4 px-5 py-1">Sign in</router-link>
+                            <router-link to="/post/index" class="btn modi-btn modi-btn__xs modi-btn__primary mt-4 px-5 py-1" data-dismiss="modal">Sign in</router-link>
     
                             <div class="md-form">
                                 <div class="invalid-feedback d-block text-center">Invalid username, please try again.</div>
@@ -799,7 +799,7 @@
                                 <img src="@/assets/images/captcha_placeholder.png" alt="CAPTCHA" style="width: 70%;height: 50%;" />
                             </div>
     
-                            <router-link to="/post/index" class="btn modi-btn modi-btn__xs modi-btn__primary mt-4 px-5 py-1">Sign in</router-link>
+                            <router-link to="/post/index" class="btn modi-btn modi-btn__xs modi-btn__primary mt-4 px-5 py-1" data-dismiss="modal">Sign in</router-link>
     
                             <div class="md-form">
                                 <div class="invalid-feedback d-block text-center">Invalid username, please try again.</div>

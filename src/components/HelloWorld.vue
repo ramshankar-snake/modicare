@@ -71,9 +71,9 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
       $(function(){
     
     var heroBannerCarousel = new Swiper('.hero-banner-carousel-container', {
-     observer: true,
-            observeParents: true,
         slidesPerView: 1,
+        observer: true,
+        observeParents: true,
         loop: true,
         navigation: {
             nextEl: '.hero-banner-carousel-container .swiper-button-next',

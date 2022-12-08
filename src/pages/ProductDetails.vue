@@ -281,16 +281,16 @@
                     </div>
                 </div>
 
-                <div v-for="feature in features" class="modi-accordion-section">
+                <div v-for="(feature , index) in products.features" class="modi-accordion-section" >
+                    
                     <div class="modi-accordion-section-title-container">
-                        <button class="modi-accordion-section-title waves-effect waves-light collapsed"
-                            data-toggle="collapse" data-target="#modi-accordion-section-2" >
-                          {{feature.tagname}}
+                        <button class="modi-accordion-section-title waves-effect waves-light collapsed" data-toggle="collapse" :data-target="'#modi-accordion-section' + index">
+                            {{ feature.tagname }}
                         </button>
                     </div>
-                    <div id="modi-accordion-section-2" class="collapse">
+                    <div :id="'modi-accordion-section'+ index" class="collapse">
                         <div class="modi-accordion-section-body" v-html="feature.tagdesc">
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -507,24 +507,12 @@ export default {
             }
         }
     },
-    watch: {
-        '$route.params': {
-            handler(newValue) {
-                const { id } = newValue
-
-                this.fetchData(id)
-            },
-            immediate: true,
-        }
-    },
     mounted() {
-
-
-
-
         $(function () {
 
             var galleryThumbs = new Swiper('.pdt-main-gallery-thumbs', {
+                observer: true,
+        observeParents: true,
                 spaceBetween: 10,
                 slidesPerView: 3,
                 freeMode: true,
@@ -588,6 +576,16 @@ export default {
                 }
             });
         });
-    }
+    },
+    watch: {
+        '$route.params': {
+            handler(newValue) {
+                const { id } = newValue
+
+                this.fetchData(id)
+            },
+            immediate: true,
+        }
+    },
 };
 </script>
