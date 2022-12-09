@@ -199,7 +199,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="nav-dropdown-item">
+                                            <!-- <div class="nav-dropdown-item">
                                                 <div class="cart-summary-dropdown-item-close">
                                                     <a href="javascript:;" class="cart-summary-dropdown-item-close-link"><i class="material-icons">close</i></a>
                                                 </div>
@@ -1332,7 +1332,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                     </div>
                                 </div>
                                 <div class="nav-dropdown-footer">

@@ -1,6 +1,9 @@
 $(function(){
     
     var heroBannerCarousel = new Swiper('.hero-banner-carousel-container', {
+        observer: true,  
+        observeParents: true,
+        rebuildOnUpdate: true,
         slidesPerView: 1,
         loop: true,
         navigation: {

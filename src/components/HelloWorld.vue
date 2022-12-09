@@ -68,12 +68,13 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
       'HomeContact': HomeContact,
     },
     mounted() {
-      $(function(){
+    //   $(function(){
     
     var heroBannerCarousel = new Swiper('.hero-banner-carousel-container', {
+        observer: true,  
+       observeParents: true,
+       rebuildOnUpdate: true,
         slidesPerView: 1,
-        observer: true,
-        observeParents: true,
         loop: true,
         navigation: {
             nextEl: '.hero-banner-carousel-container .swiper-button-next',
@@ -169,6 +170,7 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
     var gallery = new Swiper('.products-showcase-gallery', {
      observer: true,
             observeParents: true,
+
         slidesPerView: 'auto',
         freeMode: true,
         grabCursor: true,
@@ -208,13 +210,13 @@ import Swiper from '../assets/js/swiper-bundle.min.js';
     //     }
     // }
 
-});
+// });
 
 $(document).on('change', '#home-contact-us-type-toggle', function(e) {
     $('.home-contact-us-type').toggleClass('active');
 });
 
-$(window).resize(function() {
+$(window).on('resize', function() {
     fixGalleryNavPositioning();
 });
 
@@ -223,6 +225,16 @@ function fixGalleryNavPositioning() {
     var swiperSlideActiveImage = swiperSlideActive.find('img');
     var swiperSlidePrevNext = $('.products-showcase-gallery .swiper-button-next, .products-showcase-gallery .swiper-button-prev');
     // swiperSlidePrevNext.css("top", swiperSlideActiveImage[0].clientHeight / 2);
+}
+
+    },
+    methods: {
+         fixCarouselNavPositioning(swiper) {
+    var carousel = $(swiper.el);
+    var swiperSlideActive = carousel.find('.swiper-slide-active');
+    var swiperSlideActiveImage = swiperSlideActive.find('img');
+    var swiperSlidePrevNext = carousel.find('.swiper-button-next, .swiper-button-prev');
+    swiperSlidePrevNext.css("top", swiperSlideActiveImage[0].clientHeight / 2);
 }
     }
   };

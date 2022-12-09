@@ -318,9 +318,14 @@
                             </router-link>
                             <div class="listing-item-footer-container">
                                 <div class="listing-item-quantity modi-qty-dropdown-container">
-                                    <select name="listing-item-quantity-select" class="selectpicker modi-qty-dropdown"
-                                        data-live-search="true" data-size="7" data-style="modi-qty-dropdown-btn"
-                                        title="Qty">
+                                    <select
+                                        name="listing-item-quantity-select"
+                                        class="selectpicker modi-qty-dropdown"
+                                        data-live-search="true"
+                                        data-size="7"
+                                        data-style="modi-qty-dropdown-btn"
+                                        title="Qty"
+                                    >
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -424,9 +429,7 @@
                                     </select>
                                 </div>
                                 <div class="listing-item-add-to-bag">
-                                    <a href="javascript:;"
-                                        class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary toggle-shopping-bag-notification">Add
-                                        to cart</a>
+                                    <a href="javascript:;" class="listing-item-add-to-bag-link btn modi-btn modi-btn__sm px-3 modi-btn__primary toggle-shopping-bag-notification">Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -491,25 +494,7 @@ export default {
         }
     },
 
-    methods: {
-        async fetchData(id) {
-            
-            let result = await axios.get("https://uat-api.modicare.com/api/app/prelogin/product/details/" + id);
-            console.log(result);
-            if (result.status == 200) {
-                this.products = result.data.result;
-                this.productDetail = result.data.result.productDetail[0];
-                this.Description = result.data.result.productDetail[0].productDescription;
-                this.similarproducts = result.data.result.similarProducts;
-                this.features = result.data.result.features;
-                console.log(this.features);
-               
-
-            }
-        },
-
-        
-    },
+   
     mounted() {
         $(function () {
 
@@ -533,6 +518,8 @@ export default {
                 }
             });
             var galleryTop = new Swiper('.pdt-main-gallery-top', {
+                observer: true,
+        observeParents: true,
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -562,6 +549,8 @@ export default {
                 }
             });
             var galleryMobile = new Swiper('.pdt-main-gallery-mobile', {
+                observer: true,
+                observeParents: true,
                 pagination: {
                     el: '.swiper-pagination',
                 },
@@ -579,6 +568,25 @@ export default {
                 }
             });
         });
+    },
+    methods: {
+        async fetchData(id) {
+            
+            let result = await axios.get("https://uat-api.modicare.com/api/app/prelogin/product/details/" + id);
+            console.log(result);
+            if (result.status == 200) {
+                this.products = result.data.result;
+                this.productDetail = result.data.result.productDetail[0];
+                this.Description = result.data.result.productDetail[0].productDescription;
+                this.similarproducts = result.data.result.similarProducts;
+                this.features = result.data.result.features;
+                console.log(this.features);
+               
+
+            }
+        },
+
+        
     },
     watch: {
         '$route.params': {

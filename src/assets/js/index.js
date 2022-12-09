@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(function(){
+    
     var heroBannerCarousel = new Swiper('.hero-banner-carousel-container', {
         slidesPerView: 1,
         loop: true,
@@ -45,8 +46,8 @@ $(document).ready(function() {
         spaceBetween: 10,
         loop: true,
         navigation: {
-            nextEl: '#most-loved-products-carousel .swiper-button-next',
-            prevEl: '#most-loved-products-carousel .swiper-button-prev',
+            nextEl: '#just-in-products-carousel .swiper-button-next',
+            prevEl: '#just-in-products-carousel .swiper-button-prev',
         },
         breakpoints: {
             768: {
@@ -63,8 +64,8 @@ $(document).ready(function() {
         spaceBetween: 10,
         loop: true,
         navigation: {
-            nextEl: '#most-loved-products-carousel .swiper-button-next',
-            prevEl: '#most-loved-products-carousel .swiper-button-prev',
+            nextEl: '#top-deals-products-carousel .swiper-button-next',
+            prevEl: '#top-deals-products-carousel .swiper-button-prev',
         },
         breakpoints: {
             768: {
@@ -99,7 +100,7 @@ $(document).on('change', '#home-contact-us-type-toggle', function(e) {
     $('.home-contact-us-type').toggleClass('active');
 });
 
-$(window).resize(function() {
+$(window).on('resize', function() {
     fixGalleryNavPositioning();
 });
 
